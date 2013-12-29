@@ -1,0 +1,79 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+<svg style="stroke-linejoin:round; stroke:black; stroke-width:0.5pt; text-anchor:middle; fill:none" xmlns="http://www.w3.org/2000/svg" font-family="Helvetica, Arial, FreeSans, Sans, sans, sans-serif" height="400px" width="400px" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100">
+
+<g>
+
+<text y="13" x="5" style="font-size:8" fill="black">1</text>
+
+<line x2="115" y1="10" x1="10" y2="10" />
+
+<text y="23" x="5" style="font-size:8" fill="black">2</text>
+
+<line x2="115" y1="20" x1="10" y2="20" />
+
+<text y="33" x="5" style="font-size:8" fill="black">3</text>
+
+<line x2="115" y1="30" x1="10" y2="30" />
+
+<text y="43" x="5" style="font-size:8" fill="black">4</text>
+
+<line x2="115" y1="40" x1="10" y2="40" />
+
+<text y="53" x="5" style="font-size:8" fill="black">5</text>
+
+<line x2="115" y1="50" x1="10" y2="50" />
+
+<text y="63" x="5" style="font-size:8" fill="black">6</text>
+
+<line x2="115" y1="60" x1="10" y2="60" />
+
+<text y="73" x="5" style="font-size:8" fill="black">7</text>
+
+<line x2="115" y1="70" x1="10" y2="70" />
+
+<text y="83" x="5" style="font-size:8" fill="black">8</text>
+
+<line x2="115" y1="80" x1="10" y2="80" />
+
+<circle cy="30" cx="95" r="1" fill="black" />
+
+None<circle cy="10" cx="95" r="1" fill="black" />
+
+None<path stroke="black" d="M95,30 C100,20 100,20 95,10" />
+
+<circle cy="30" cx="35" r="1" fill="black" />
+
+None<circle cy="10" cx="35" r="1" fill="black" />
+
+None<path stroke="black" d="M35,30 C40,20 40,20 35,10" />
+
+<circle cy="20" cx="35" r="1" fill="black" />
+
+None<circle cy="30" cx="35" r="1" fill="black" />
+
+None<path stroke="black" d="M35,20 C40,25 40,25 35,30" />
+
+<circle cy="80" cx="45" r="1" fill="black" />
+
+None<circle cy="20" cx="45" r="1" fill="black" />
+
+None<path stroke="black" d="M45,80 C50,50 50,50 45,20" />
+
+<circle cy="50" cx="55" r="1" fill="black" />
+
+None<circle cy="70" cx="55" r="1" fill="black" />
+
+None<path stroke="black" d="M55,50 C60,60 60,60 55,70" />
+
+<circle cy="60" cx="25" r="1" fill="black" />
+
+None<circle cy="40" cx="25" r="1" fill="black" />
+
+None<path stroke="black" d="M25,60 C30,50 30,50 25,40" />
+
+</g>
+
+</svg>
+

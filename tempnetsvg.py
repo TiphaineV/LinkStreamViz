@@ -44,7 +44,7 @@ for i in range(1, int(argv["max-nodes"]) + 1):
 links_to_json = []
 # If we are reading from a JSON file
 if int(argv["json"]) is 1:
-	json_struct = json.loads(open("test.json", "r").read())
+	json_struct = json.loads(open(sys.argv[1], "r").read())
 	for link in json_struct:
 		new_link = {}
 		new_link["time"] = int(json_struct[link]["time"])
@@ -74,17 +74,17 @@ else:
 			links_to_json.append(link)
 
 # Read JSON structure
-# with open(sys.argv[1], 'r') as infile:
 for link in links_to_json:
-	# contents = line.split(" ")
 	ts = link["time"]
 	node_1 = link["from"]
 	node_2 = link["to"]
 	offset = ts*10 + 15
 
+	# Add nodes
 	g.append(g.append(svgfig.SVG("circle", cx=offset, cy=10*node_1, r=1, fill=link["color"])))
 	g.append(g.append(svgfig.SVG("circle", cx=offset, cy=10*node_2, r=1, fill=link["color"])))
 
+	# Draw path between nodes according to specified curving
 	if link["curved"] is 1:
 		g.append(svgfig.SVG("path", stroke=link["color"],d="M" + str(offset) + "," + str(10*node_1) + " C" + str(offset+5) + "," + str(((10*node_1 + 10*node_2)/2)) + " " + str(offset+5) + "," + str(((10*node_1 + 10*node_2)/2)) + " " + str(offset) + "," + str(10*node_2)))
 	elif link["curved"] is -1:
@@ -92,7 +92,6 @@ for link in links_to_json:
 	else:
 		g.append(svgfig.SVG("line", x1=offset, y1=10*node_1, x2=offset, y2=10*node_2, stroke=link["color"]))
 		
-	# g.append(svgfig.SVG("path", d="M" + str(offset) + "," + str(10*node_1) + " C10,10 25,10 25,20"))
 # Save to svg file
 if argv.get("output") is not None:
 	g.save(argv["output"])
