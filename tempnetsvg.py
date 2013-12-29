@@ -16,9 +16,9 @@ def show_help():
 	print("    from")
 	print("    to")
 	print("    time")
-	print("    curved:[-1|0|1]")
-	print("    color: to be chosen in [red|blue|green]")
-	print("    group: Group ID (any number) offers the opportunity to color groups of links identically")
+	print("    curved:[-1 (bend towards left)|0 (straight line)|1 (bend towards right)]")
+	print("    color: to be chosen in http://www.december.com/html/spec/colorsvg.html")
+	# print("    group: Group ID (any number) offers the opportunity to color groups of links identically")
 
 def read_argv():
 	for arg in sys.argv:
@@ -42,20 +42,25 @@ for i in range(1, int(argv["max-nodes"]) + 1):
 	
 # Transform file of triplets into JSON structure, or load JSON structure
 links_to_json = []
+# If we are reading from a JSON file
 if int(argv["json"]) is 1:
-	# print "Trying to read from json file..."
-	stuff = json.loads(open("test.json", "r").read())
-	for link in stuff:
-
+	json_struct = json.loads(open("test.json", "r").read())
+	for link in json_struct:
 		new_link = {}
-		new_link["time"] = int(stuff[link]["time"])
-		new_link["from"] = int(stuff[link]["from"])
-		new_link["to"] = int(stuff[link]["to"])
-		if stuff[link].get("color") is not None:
-			new_link["color"] = stuff[link]["color"]
+		new_link["time"] = int(json_struct[link]["time"])
+		new_link["from"] = int(json_struct[link]["from"])
+		new_link["to"] = int(json_struct[link]["to"])
+		if json_struct[link].get("color") is not None:
+			new_link["color"] = json_struct[link]["color"]
 		else:
 			new_link["color"] = "black"
+
+		if json_struct[link].get("curved") is not None:
+			new_link["curved"] = json_struct[link]["curved"]
+		else:
+			new_link["curved"] = 1
 		links_to_json.append(new_link)
+# Otherwise, we have to transform the file into a dict structure
 else:
 	with open(sys.argv[1], 'r') as infile:
 		for line in infile:
@@ -65,9 +70,8 @@ else:
 			link["from"] = int(contents[1].strip())
 			link["to"] = int(contents[2].strip())
 			link["color"] = "black"
+			link["curved"] = 1
 			links_to_json.append(link)
-
-print json.dumps(links_to_json,sort_keys=True, indent=4, separators=(',', ': '))
 
 # Read JSON structure
 # with open(sys.argv[1], 'r') as infile:
@@ -81,10 +85,13 @@ for link in links_to_json:
 	g.append(g.append(svgfig.SVG("circle", cx=offset, cy=10*node_1, r=1, fill=link["color"])))
 	g.append(g.append(svgfig.SVG("circle", cx=offset, cy=10*node_2, r=1, fill=link["color"])))
 
-	if node_1 == node_2+1 or node_2 == node_1 +1:
-		g.append(svgfig.SVG("line", x1=offset, y1=10*node_1, x2=offset, y2=10*node_2, stroke=link["color"]))
-	else:
+	if link["curved"] is 1:
 		g.append(svgfig.SVG("path", stroke=link["color"],d="M" + str(offset) + "," + str(10*node_1) + " C" + str(offset+5) + "," + str(((10*node_1 + 10*node_2)/2)) + " " + str(offset+5) + "," + str(((10*node_1 + 10*node_2)/2)) + " " + str(offset) + "," + str(10*node_2)))
+	elif link["curved"] is -1:
+		g.append(svgfig.SVG("path", stroke=link["color"],d="M" + str(offset) + "," + str(10*node_1) + " C" + str(offset-5) + "," + str(((10*node_1 + 10*node_2)/2)) + " " + str(offset-5) + "," + str(((10*node_1 + 10*node_2)/2)) + " " + str(offset) + "," + str(10*node_2)))
+	else:
+		g.append(svgfig.SVG("line", x1=offset, y1=10*node_1, x2=offset, y2=10*node_2, stroke=link["color"]))
+		
 	# g.append(svgfig.SVG("path", d="M" + str(offset) + "," + str(10*node_1) + " C10,10 25,10 25,20"))
 # Save to svg file
 if argv.get("output") is not None:

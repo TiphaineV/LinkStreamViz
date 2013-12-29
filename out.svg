@@ -37,17 +37,17 @@
 
 <line x2="115" y1="80" x1="10" y2="80" />
 
-<circle cy="30" cx="95" r="1" fill="red" />
+<circle cy="30" cx="95" r="1" fill="black" />
 
-None<circle cy="10" cx="95" r="1" fill="red" />
+None<circle cy="10" cx="95" r="1" fill="black" />
 
-None<path stroke="red" d="M95,30 C100,20 100,20 95,10" />
+None<path stroke="black" d="M95,30 C100,20 100,20 95,10" />
 
 <circle cy="20" cx="35" r="1" fill="black" />
 
 None<circle cy="30" cx="35" r="1" fill="black" />
 
-None<line x2="35" y1="20" stroke="black" y2="30" x1="35" />
+None<path stroke="black" d="M35,20 C40,25 40,25 35,30" />
 
 <circle cy="30" cx="35" r="1" fill="black" />
 
