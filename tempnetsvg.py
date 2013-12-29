@@ -40,25 +40,37 @@ for i in range(1, int(argv["max-nodes"]) + 1):
 	g.append(svgfig.SVG("line", x1=10, y1=10*i, x2=15+10*int(argv["max-time"]), y2=10*i))
 	
 # Transform file of triplets into JSON structure, or load JSON structure
+links_to_json = []
 
-
-# Read JSON structure
 with open(sys.argv[1], 'r') as infile:
 	for line in infile:
+		link = {}
 		contents = line.split(" ")
-		ts = int(contents[0])
-		node_1 = int(contents[1].strip())
-		node_2 = int(contents[2].strip())
-		offset = ts*10 + 15
+		link["time"] = int(contents[0])
+		link["from"] = int(contents[1].strip())
+		link["to"] = int(contents[2].strip())
+		links_to_json.append(link)
 
-		g.append(g.append(svgfig.SVG("circle", cx=offset, cy=10*node_1, r=1, fill="black")))
-		g.append(g.append(svgfig.SVG("circle", cx=offset, cy=10*node_2, r=1, fill="black")))
-		
-		if node_1 == node_2+1 or node_2 == node_1 +1:
-			g.append(svgfig.SVG("line", x1=offset, y1=10*node_1, x2=offset, y2=10*node_2))
-		else:
-			g.append(svgfig.SVG("path", d="M" + str(offset) + "," + str(10*node_1) + " C" + str(offset+5) + "," + str(((10*node_1 + 10*node_2)/2)) + " " + str(offset+5) + "," + str(((10*node_1 + 10*node_2)/2)) + " " + str(offset) + "," + str(10*node_2)))
-		# g.append(svgfig.SVG("path", d="M" + str(offset) + "," + str(10*node_1) + " C10,10 25,10 25,20"))
+
+print json.dumps(links_to_json,sort_keys=True, indent=4, separators=(',', ': '))
+
+# Read JSON structure
+# with open(sys.argv[1], 'r') as infile:
+for link in links_to_json:
+	# contents = line.split(" ")
+	ts = link["time"]
+	node_1 = link["from"]
+	node_2 = link["to"]
+	offset = ts*10 + 15
+
+	g.append(g.append(svgfig.SVG("circle", cx=offset, cy=10*node_1, r=1, fill="black")))
+	g.append(g.append(svgfig.SVG("circle", cx=offset, cy=10*node_2, r=1, fill="black")))
+	
+	if node_1 == node_2+1 or node_2 == node_1 +1:
+		g.append(svgfig.SVG("line", x1=offset, y1=10*node_1, x2=offset, y2=10*node_2))
+	else:
+		g.append(svgfig.SVG("path", d="M" + str(offset) + "," + str(10*node_1) + " C" + str(offset+5) + "," + str(((10*node_1 + 10*node_2)/2)) + " " + str(offset+5) + "," + str(((10*node_1 + 10*node_2)/2)) + " " + str(offset) + "," + str(10*node_2)))
+	# g.append(svgfig.SVG("path", d="M" + str(offset) + "," + str(10*node_1) + " C10,10 25,10 25,20"))
 # Save to svg file
 if argv.get("output") is not None:
 	g.save(argv["output"])
