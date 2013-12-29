@@ -4,6 +4,7 @@ import svgfig
 import json
 
 argv = {}
+argv["json"] = 0
 g = svgfig.SVG("g")
 nodes = set()
 offset = 15
@@ -41,16 +42,30 @@ for i in range(1, int(argv["max-nodes"]) + 1):
 	
 # Transform file of triplets into JSON structure, or load JSON structure
 links_to_json = []
+if int(argv["json"]) is 1:
+	# print "Trying to read from json file..."
+	stuff = json.loads(open("test.json", "r").read())
+	for link in stuff:
 
-with open(sys.argv[1], 'r') as infile:
-	for line in infile:
-		link = {}
-		contents = line.split(" ")
-		link["time"] = int(contents[0])
-		link["from"] = int(contents[1].strip())
-		link["to"] = int(contents[2].strip())
-		links_to_json.append(link)
-
+		new_link = {}
+		new_link["time"] = int(stuff[link]["time"])
+		new_link["from"] = int(stuff[link]["from"])
+		new_link["to"] = int(stuff[link]["to"])
+		if stuff[link].get("color") is not None:
+			new_link["color"] = stuff[link]["color"]
+		else:
+			new_link["color"] = "black"
+		links_to_json.append(new_link)
+else:
+	with open(sys.argv[1], 'r') as infile:
+		for line in infile:
+			link = {}
+			contents = line.split(" ")
+			link["time"] = int(contents[0])
+			link["from"] = int(contents[1].strip())
+			link["to"] = int(contents[2].strip())
+			link["color"] = "black"
+			links_to_json.append(link)
 
 print json.dumps(links_to_json,sort_keys=True, indent=4, separators=(',', ': '))
 
@@ -63,13 +78,13 @@ for link in links_to_json:
 	node_2 = link["to"]
 	offset = ts*10 + 15
 
-	g.append(g.append(svgfig.SVG("circle", cx=offset, cy=10*node_1, r=1, fill="black")))
-	g.append(g.append(svgfig.SVG("circle", cx=offset, cy=10*node_2, r=1, fill="black")))
-	
+	g.append(g.append(svgfig.SVG("circle", cx=offset, cy=10*node_1, r=1, fill=link["color"])))
+	g.append(g.append(svgfig.SVG("circle", cx=offset, cy=10*node_2, r=1, fill=link["color"])))
+
 	if node_1 == node_2+1 or node_2 == node_1 +1:
-		g.append(svgfig.SVG("line", x1=offset, y1=10*node_1, x2=offset, y2=10*node_2))
+		g.append(svgfig.SVG("line", x1=offset, y1=10*node_1, x2=offset, y2=10*node_2, stroke=link["color"]))
 	else:
-		g.append(svgfig.SVG("path", d="M" + str(offset) + "," + str(10*node_1) + " C" + str(offset+5) + "," + str(((10*node_1 + 10*node_2)/2)) + " " + str(offset+5) + "," + str(((10*node_1 + 10*node_2)/2)) + " " + str(offset) + "," + str(10*node_2)))
+		g.append(svgfig.SVG("path", stroke=link["color"],d="M" + str(offset) + "," + str(10*node_1) + " C" + str(offset+5) + "," + str(((10*node_1 + 10*node_2)/2)) + " " + str(offset+5) + "," + str(((10*node_1 + 10*node_2)/2)) + " " + str(offset) + "," + str(10*node_2)))
 	# g.append(svgfig.SVG("path", d="M" + str(offset) + "," + str(10*node_1) + " C10,10 25,10 25,20"))
 # Save to svg file
 if argv.get("output") is not None:
