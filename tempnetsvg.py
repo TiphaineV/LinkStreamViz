@@ -8,6 +8,9 @@ argv["json"] = 0
 g = svgfig.SVG("g")
 nodes = set()
 offset = 15
+hoffset = 15
+voffset = 10
+groups = {}
 
 # BEGIN FUNCTIONS
 def show_help():
@@ -59,6 +62,18 @@ if int(argv["json"]) is 1:
 			new_link["curved"] = json_struct[link]["curved"]
 		else:
 			new_link["curved"] = 1
+
+		if json_struct[link].get("group") is not None:
+			new_link["group"] = json_struct[link]["group"]
+			groupID = json_struct[link]["group"]
+			groups[groupID] = {}
+			groups[groupID]["timeStart"] = 100000
+			groups[groupID]["timeEnd"] = 0
+			groups[groupID]["nodeStart"] = 100000
+			groups[groupID]["nodeEnd"] = 0
+		else:
+			new_link["group"] = None
+
 		links_to_json.append(new_link)
 # Otherwise, we have to transform the file into a dict structure
 else:
@@ -71,6 +86,7 @@ else:
 			link["to"] = int(contents[2].strip())
 			link["color"] = "black"
 			link["curved"] = 1
+			link["group"] = None
 			links_to_json.append(link)
 
 # Read JSON structure
@@ -91,10 +107,35 @@ for link in links_to_json:
 		g.append(svgfig.SVG("path", stroke=link["color"],d="M" + str(offset) + "," + str(10*node_1) + " C" + str(offset-5) + "," + str(((10*node_1 + 10*node_2)/2)) + " " + str(offset-5) + "," + str(((10*node_1 + 10*node_2)/2)) + " " + str(offset) + "," + str(10*node_2)))
 	else:
 		g.append(svgfig.SVG("line", x1=offset, y1=10*node_1, x2=offset, y2=10*node_2, stroke=link["color"]))
+
+	if link["group"] is not None:
+		groupID = int(link["group"])
+		if groups[groupID]["timeStart"] > link["time"]:
+			groups[groupID]["timeStart"] = link["time"]
+
+		if groups[groupID]["timeEnd"] < link["time"]:
+			groups[groupID]["timeEnd"] = link["time"]
+
+		if groups[groupID]["nodeStart"] > min(link["from"], link["to"]):
+			groups[groupID]["nodeStart"] = min(link["from"], link["to"])
+
+		if groups[groupID]["nodeEnd"] < max(link["from"], link["to"]):
+			groups[groupID]["nodeEnd"] = max(link["from"], link["to"])
+
+# Draw groups
+for group in groups:
+	print "Time start : " + str(groups[group]["timeStart"]*hoffset)
+	print "Time end : " + str(groups[group]["timeEnd"]*hoffset)
+	print "Node start : " + str(groups[group]["nodeStart"])
+	print "Node end : " + str(groups[group]["nodeEnd"])
+
+
+	# g.append(svgfig.SVG("rect", x=str(groups[group]["timeStart"]*hoffset), y=str(groups[group]["nodeStart"]*voffset), width=str(groups[group]["timeEnd"]*hoffset - groups[group]["timeStart"]*hoffset - 21), height=str(groups[group]["nodeEnd"]*voffset - groups[group]["nodeStart"]*voffset), style="fill:blue;stroke:blue;stroke-width:1;fill-opacity:0;stroke-opacity:0.9"))
+
+
 		
 # Save to svg file
 if argv.get("output") is not None:
 	g.save(argv["output"])
 else: 
 	g.save("out.svg")
-

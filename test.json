@@ -4,13 +4,15 @@
         "time": 8,
         "to": 1,
         "color":"red",
-        "curved":-1
+        "curved":-1,
+        "group":1
     },
     "2":{
         "from": 3,
         "time": 2,
         "to": 1,
-        "color":"green"
+        "color":"green",
+        "group": 1
     },
     "3":{
         "from": 2,

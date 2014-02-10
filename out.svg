@@ -7,41 +7,41 @@
 
 <text y="13" x="5" style="font-size:8" fill="black">1</text>
 
-<line x2="115" y1="10" x1="10" y2="10" />
+<line x2="1015" y1="10" x1="10" y2="10" />
 
 <text y="23" x="5" style="font-size:8" fill="black">2</text>
 
-<line x2="115" y1="20" x1="10" y2="20" />
+<line x2="1015" y1="20" x1="10" y2="20" />
 
 <text y="33" x="5" style="font-size:8" fill="black">3</text>
 
-<line x2="115" y1="30" x1="10" y2="30" />
+<line x2="1015" y1="30" x1="10" y2="30" />
 
 <text y="43" x="5" style="font-size:8" fill="black">4</text>
 
-<line x2="115" y1="40" x1="10" y2="40" />
+<line x2="1015" y1="40" x1="10" y2="40" />
 
 <text y="53" x="5" style="font-size:8" fill="black">5</text>
 
-<line x2="115" y1="50" x1="10" y2="50" />
+<line x2="1015" y1="50" x1="10" y2="50" />
 
 <text y="63" x="5" style="font-size:8" fill="black">6</text>
 
-<line x2="115" y1="60" x1="10" y2="60" />
+<line x2="1015" y1="60" x1="10" y2="60" />
 
 <text y="73" x="5" style="font-size:8" fill="black">7</text>
 
-<line x2="115" y1="70" x1="10" y2="70" />
+<line x2="1015" y1="70" x1="10" y2="70" />
 
 <text y="83" x="5" style="font-size:8" fill="black">8</text>
 
-<line x2="115" y1="80" x1="10" y2="80" />
+<line x2="1015" y1="80" x1="10" y2="80" />
 
-<circle cy="30" cx="95" r="1" fill="black" />
+<circle cy="30" cx="95" r="1" fill="red" />
 
-None<circle cy="10" cx="95" r="1" fill="black" />
+None<circle cy="10" cx="95" r="1" fill="red" />
 
-None<path stroke="black" d="M95,30 C100,20 100,20 95,10" />
+None<path stroke="red" d="M95,30 C90,20 90,20 95,10" />
 
 <circle cy="20" cx="35" r="1" fill="black" />
 
@@ -49,11 +49,11 @@ None<circle cy="30" cx="35" r="1" fill="black" />
 
 None<path stroke="black" d="M35,20 C40,25 40,25 35,30" />
 
-<circle cy="30" cx="35" r="1" fill="black" />
+<circle cy="30" cx="35" r="1" fill="green" />
 
-None<circle cy="10" cx="35" r="1" fill="black" />
+None<circle cy="10" cx="35" r="1" fill="green" />
 
-None<path stroke="black" d="M35,30 C40,20 40,20 35,10" />
+None<path stroke="green" d="M35,30 C40,20 40,20 35,10" />
 
 <circle cy="50" cx="55" r="1" fill="black" />
 
@@ -65,7 +65,7 @@ None<path stroke="black" d="M55,50 C60,60 60,60 55,70" />
 
 None<circle cy="20" cx="45" r="1" fill="black" />
 
-None<path stroke="black" d="M45,80 C50,50 50,50 45,20" />
+None<line x2="45" y1="80" stroke="black" y2="20" x1="45" />
 
 <circle cy="60" cx="25" r="1" fill="black" />
 
