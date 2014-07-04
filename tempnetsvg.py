@@ -12,6 +12,9 @@ hoffset = 15
 voffset = 10
 groups = {}
 
+#svgfig._canvas_defaults["width"] = '1200px'
+#svgfig._canvas_defaults["width"] = str(100*12) + 'px'
+
 # BEGIN FUNCTIONS
 def show_help():
 	print("Usage: draw_link_streams.py input_file --max_nodes=<N> --max-time=<T> [--output=<out.svg>]")
@@ -40,7 +43,7 @@ read_argv()
 
 # Draw background lines
 for i in range(1, int(argv["max-nodes"]) + 1):
-	g.append(svgfig.SVG("text", str(i), x=5, y=10*i+3, fill="black", style="font-size:8"))
+	g.append(svgfig.SVG("text", str(chr(64+i)), x=5, y=10*i+3, fill="black", style="font-size:8"))
 	g.append(svgfig.SVG("line", x1=10, y1=10*i, x2=15+10*int(argv["max-time"]), y2=10*i))
 	
 # Transform file of triplets into JSON structure, or load JSON structure
