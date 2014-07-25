@@ -13,7 +13,7 @@ voffset = 10
 groups = {}
 
 #svgfig._canvas_defaults["width"] = '1200px'
-#svgfig._canvas_defaults["width"] = str(100*12) + 'px'
+svgfig._canvas_defaults["width"] = str(100*12) + 'px'
 
 # BEGIN FUNCTIONS
 def show_help():
@@ -43,9 +43,12 @@ read_argv()
 
 # Draw background lines
 for i in range(1, int(argv["max-nodes"]) + 1):
-	g.append(svgfig.SVG("text", str(chr(64+i)), x=5, y=10*i+3, fill="black", style="font-size:8"))
-	g.append(svgfig.SVG("line", x1=10, y1=10*i, x2=15+10*int(argv["max-time"]), y2=10*i))
+	g.append(svgfig.SVG("text", str(chr(96+i)), x=5, y=10*i+1.5, fill="black", stroke_width=0, style="font-size:6"))
+	g.append(svgfig.SVG("line", stroke_dasharray="2,2", stroke_width=0.5, x1=10, y1=10*i, x2=15+10*int(argv["max-time"]), y2=10*i))
 	
+	# Add timeline
+	
+
 # Transform file of triplets into JSON structure, or load JSON structure
 links_to_json = []
 # If we are reading from a JSON file
@@ -124,6 +127,9 @@ for link in links_to_json:
 
 		if groups[groupID]["nodeEnd"] < max(link["from"], link["to"]):
 			groups[groupID]["nodeEnd"] = max(link["from"], link["to"])
+
+
+	svgfig._canvas_defaults["width"] = str(800) + 'px'
 
 # Draw groups
 for group in groups:
