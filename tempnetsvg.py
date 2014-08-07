@@ -18,7 +18,7 @@ svgfig._canvas_defaults["width"] = str(100*12) + 'px'
 
 # BEGIN FUNCTIONS
 def show_help():
-	print("Usage: draw_link_streams.py input_file --max_nodes=<N> --max-time=<T> [--output=<out.svg>]")
+	print("Usage: draw_link_streams.py input_file --max-nodes=<N> --max-time=<T> [--output=<out.svg>]")
 	print("Input file is either a text file containing t u v, or a JSON file where the following properties are available:")
 	print("    from")
 	print("    to")
