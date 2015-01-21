@@ -48,21 +48,21 @@ for i in range(1, int(argv["max-nodes"]) + 1):
 	g.append(svgfig.SVG("line", stroke_dasharray="2,2", stroke_width=0.5, x1=10, y1=10*i, x2=15+10*int(argv["max-time"]), y2=10*i))
 	
 # Add timearrow
-g.append(svgfig.SVG("line", stroke_width=0.5, x1=10, y1=10+10*int(argv["max-nodes"]) , x2=25+10*int(argv["max-time"]), y2=10+10*int(argv["max-nodes"])))
-g.append(svgfig.SVG("line", stroke_width=0.5, x1=22+10*int(argv["max-time"]), y1=7+10*int(argv["max-nodes"]) , x2=25+10*int(argv["max-time"]), y2=10+10*int(argv["max-nodes"])))
-g.append(svgfig.SVG("line", stroke_width=0.5, x1=22+10*int(argv["max-time"]), y1=13+10*int(argv["max-nodes"]) , x2=25+10*int(argv["max-time"]), y2=10+10*int(argv["max-nodes"])))
-g.append(svgfig.SVG("text", str("Time"), x=25+10*int(argv["max-time"]) , y=-4+10*int(argv["max-time"]) , fill="black", stroke_width=0, style="font-size:4"))
-
-# Add time ticks
-for i in range(0, int(argv["max-time"])):
-	if i % 5 == 0:
-		if i == 0:
-			g.append(svgfig.SVG("line", stroke_width=0.5, x1=10 , y1=10+10*int(argv["max-nodes"]), x2=10 , y2=12+10*int(argv["max-nodes"])))
-			g.append(svgfig.SVG("text", str(i), x=10 , y=-2+10*int(argv["max-time"]) , fill="black", stroke_width=0, style="font-size:6"))
-		else:
-			g.append(svgfig.SVG("line", stroke_width=0.5, x1=offset*i , y1=10+10*int(argv["max-nodes"]), x2=offset*i , y2=12+10*int(argv["max-nodes"])))
-			g.append(svgfig.SVG("text", str(i), x=offset*i , y=-2+10*int(argv["max-time"]) , fill="black", stroke_width=0, style="font-size:6"))
-
+#g.append(svgfig.SVG("line", stroke_width=0.5, x1=10, y1=10+10*int(argv["max-nodes"]) , x2=25+10*int(argv["max-time"]), y2=10+10*int(argv["max-nodes"])))
+#g.append(svgfig.SVG("line", stroke_width=0.5, x1=22+10*int(argv["max-time"]), y1=7+10*int(argv["max-nodes"]) , x2=25+10*int(argv["max-time"]), y2=10+10*int(argv["max-nodes"])))
+#g.append(svgfig.SVG("line", stroke_width=0.5, x1=22+10*int(argv["max-time"]), y1=13+10*int(argv["max-nodes"]) , x2=25+10*int(argv["max-time"]), y2=10+10*int(argv["max-nodes"])))
+#g.append(svgfig.SVG("text", str("Time"), x=25+10*int(argv["max-time"]) , y=-4+10*int(argv["max-time"]) , fill="black", stroke_width=0, style="font-size:4"))
+#
+## Add time ticks
+#for i in range(0, int(argv["max-time"])):
+#	if i % 5 == 0:
+#		if i == 0:
+#			g.append(svgfig.SVG("line", stroke_width=0.5, x1=10 , y1=10+10*int(argv["max-nodes"]), x2=10 , y2=12+10*int(argv["max-nodes"])))
+#			g.append(svgfig.SVG("text", str(i), x=10 , y=-2+10*int(argv["max-time"]) , fill="black", stroke_width=0, style="font-size:6"))
+#		else:
+#			g.append(svgfig.SVG("line", stroke_width=0.5, x1=offset*i , y1=10+10*int(argv["max-nodes"]), x2=offset*i , y2=12+10*int(argv["max-nodes"])))
+#			g.append(svgfig.SVG("text", str(i), x=offset*i , y=-2+10*int(argv["max-time"]) , fill="black", stroke_width=0, style="font-size:6"))
+#
 # Transform file of triplets into JSON structure, or load JSON structure
 links_to_json = []
 # If we are reading from a JSON file
