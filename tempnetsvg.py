@@ -6,12 +6,42 @@ import math
 
 argv = {}
 argv["json"] = 0
+argv["max-time"] = 0
+argv["max-nodes"] = 0
 g = svgfig.SVG("g")
 nodes = set()
 offset = 15
 groups = {}
 
 # BEGIN FUNCTIONS
+def ask_args():
+	sys.stderr.write(" Input number of nodes[" + str(argv["max-nodes"]) + "]:\n")
+	user_maxnodes = raw_input()
+	if user_maxnodes != '':
+		argv["max-nodes"] = int(user_maxnodes)
+	sys.stderr.write(" Input maximum time [" + str(argv["max-time"]) + "]:\n")
+	user_maxtime = raw_input()
+	if user_maxtime != '':
+		argv["max-time"] = int(user_maxtime)
+
+def infer_args():
+	if argv["json"] == 0:
+		inputfile = open(sys.argv[1])
+		for line in inputfile.readlines():
+			contents = line.split(" ")
+			t = int(contents[0])
+			u = int(contents[1])
+			v = int(contents[2])
+
+			if t > argv["max-time"]:
+				argv["max-time"] = t
+			if u > argv["max-nodes"]:
+				argv["max-nodes"] = u
+			if v > argv["max-nodes"]:
+				argv["max-nodes"] = v
+		inputfile.close()
+
+
 def show_help():
 	print("Usage: draw_link_streams.py input_file --max-nodes=<N> --max-time=<T> [--output=<out.svg>]")
 	print("Input file is either a text file containing t u v, or a JSON file where the following properties are available:")
@@ -28,14 +58,26 @@ def read_argv():
 			content = arg.split("=")
 			arg_name = content[0].replace("--", "")
 			argv[arg_name] = content[1]
+
+def version():
+	sys.stderr.write("\tTempNetSVG 1.0 -- Jordan Viard 2015\n")
 # END FUNCTIONS
 
 # BEGIN MAIN PROGRAM
 if len(sys.argv) < 2 or "--help" in sys.argv or "-h" in sys.argv :
 	show_help()
 	sys.exit()
+if "-v" in sys.argv or "--version" in sys.argv:
+	version()
+	exit()
 
 read_argv()
+
+## Infer max-nodes/times from input file, and confirm
+infer_args()
+ask_args()
+
+sys.stderr.write(" I will now generate a drawing of file " + str(sys.argv[1]) + ", containing " + str(argv["max-nodes"]) + " nodes over " + str(argv["max-time"]) + " instants of time."+ "\n")
 
 # Define dimensions
 
@@ -55,7 +97,7 @@ voffset = 10
 
 # Draw background lines
 for i in range(1, int(argv["max-nodes"]) + 1):
-	g.append(svgfig.SVG("text", str(chr(96+i)), x=str(origleft) + "px", y=10*i+origtop, fill="black", stroke_width=0, style="font-size:6"))
+	# g.append(svgfig.SVG("text", str(chr(96+i)), x=str(origleft) + "px", y=10*i+origtop, fill="black", stroke_width=0, style="font-size:6"))
 	g.append(svgfig.SVG("line", stroke_dasharray="2,2", stroke_width=0.5, x1=str(origleft + 5) + "px", y1=10*i+origtop, x2=width - 5, y2=10*i + origtop))
 
 # Add timearrow
@@ -155,16 +197,18 @@ for link in links_to_json:
 			groups[groupID]["nodeEnd"] = max(link["from"], link["to"])
 
 # Draw groups
-for group in groups:
-	print "Time start : " + str(groups[group]["timeStart"]*hoffset)
-	print "Time end : " + str(groups[group]["timeEnd"]*hoffset)
-	print "Node start : " + str(groups[group]["nodeStart"])
-	print "Node end : " + str(groups[group]["nodeEnd"])
+# for group in groups:
+# 	print "Time start : " + str(groups[group]["timeStart"]*hoffset)
+# 	print "Time end : " + str(groups[group]["timeEnd"]*hoffset)
+# 	print "Node start : " + str(groups[group]["nodeStart"])
+# 	print "Node end : " + str(groups[group]["nodeEnd"])
 
 	# g.append(svgfig.SVG("rect", x=str(groups[group]["timeStart"]*hoffset), y=str(groups[group]["nodeStart"]*voffset), width=str(groups[group]["timeEnd"]*hoffset - groups[group]["timeStart"]*hoffset - 21), height=str(groups[group]["nodeEnd"]*voffset - groups[group]["nodeStart"]*voffset), style="fill:blue;stroke:blue;stroke-width:1;fill-opacity:0;stroke-opacity:0.9"))
 
 # Save to svg file
 if argv.get("output") is not None:
 	svgfig.canvas(g, viewBox="0 0 " + str(width) + " " + str(height)).save(argv["output"])
+	sys.stderr.write("Output generated to "+ str(argv["output"]) + ".\n")
 else:
 	svgfig.canvas(g, viewBox="0 0 " + str(width) + " " + str(height)).save("out.svg")
+	sys.stderr.write(" Output generated to out.svg.\n")
