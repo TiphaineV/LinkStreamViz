@@ -1,0 +1,629 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+<svg style="stroke-linejoin:round; stroke:black; stroke-width:0.5pt; text-anchor:middle; fill:none" xmlns="http://www.w3.org/2000/svg" font-family="Helvetica, Arial, FreeSans, Sans, sans, sans-serif" height="32px" width="1035px" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1035 32">
+
+<g>
+
+<text style="font-size:6" y="10" x="5px" stroke-width="0" fill="black">a</text>
+
+<line stroke-width="0.5" y2="10" x2="1030" stroke-dasharray="2,2" y1="10" x1="10px" />
+
+<text style="font-size:6" y="20" x="5px" stroke-width="0" fill="black">b</text>
+
+<line stroke-width="0.5" y2="20" x2="1030" stroke-dasharray="2,2" y1="20" x1="10px" />
+
+<text style="font-size:6" y="30" x="5px" stroke-width="0" fill="black">c</text>
+
+<line stroke-width="0.5" y2="30" x2="1030" stroke-dasharray="2,2" y1="30" x1="10px" />
+
+<circle cy="10" cx="20" r="1" fill="black" />
+
+None<circle cy="20" cx="20" r="1" fill="black" />
+
+None<path stroke="black" d="M20,10 C21.1547005384,15 21.1547005384,15 20,20" />
+
+<circle cy="20" cx="30" r="1" fill="black" />
+
+None<circle cy="30" cx="30" r="1" fill="black" />
+
+None<path stroke="black" d="M30,20 C31.1547005384,25 31.1547005384,25 30,30" />
+
+<circle cy="10" cx="40" r="1" fill="black" />
+
+None<circle cy="20" cx="40" r="1" fill="black" />
+
+None<path stroke="black" d="M40,10 C41.1547005384,15 41.1547005384,15 40,20" />
+
+<circle cy="20" cx="50" r="1" fill="black" />
+
+None<circle cy="30" cx="50" r="1" fill="black" />
+
+None<path stroke="black" d="M50,20 C51.1547005384,25 51.1547005384,25 50,30" />
+
+<circle cy="10" cx="60" r="1" fill="black" />
+
+None<circle cy="20" cx="60" r="1" fill="black" />
+
+None<path stroke="black" d="M60,10 C61.1547005384,15 61.1547005384,15 60,20" />
+
+<circle cy="20" cx="70" r="1" fill="black" />
+
+None<circle cy="30" cx="70" r="1" fill="black" />
+
+None<path stroke="black" d="M70,20 C71.1547005384,25 71.1547005384,25 70,30" />
+
+<circle cy="10" cx="80" r="1" fill="black" />
+
+None<circle cy="20" cx="80" r="1" fill="black" />
+
+None<path stroke="black" d="M80,10 C81.1547005384,15 81.1547005384,15 80,20" />
+
+<circle cy="20" cx="90" r="1" fill="black" />
+
+None<circle cy="30" cx="90" r="1" fill="black" />
+
+None<path stroke="black" d="M90,20 C91.1547005384,25 91.1547005384,25 90,30" />
+
+<circle cy="10" cx="100" r="1" fill="black" />
+
+None<circle cy="20" cx="100" r="1" fill="black" />
+
+None<path stroke="black" d="M100,10 C101.154700538,15 101.154700538,15 100,20" />
+
+<circle cy="20" cx="110" r="1" fill="black" />
+
+None<circle cy="30" cx="110" r="1" fill="black" />
+
+None<path stroke="black" d="M110,20 C111.154700538,25 111.154700538,25 110,30" />
+
+<circle cy="10" cx="120" r="1" fill="black" />
+
+None<circle cy="20" cx="120" r="1" fill="black" />
+
+None<path stroke="black" d="M120,10 C121.154700538,15 121.154700538,15 120,20" />
+
+<circle cy="20" cx="130" r="1" fill="black" />
+
+None<circle cy="30" cx="130" r="1" fill="black" />
+
+None<path stroke="black" d="M130,20 C131.154700538,25 131.154700538,25 130,30" />
+
+<circle cy="10" cx="140" r="1" fill="black" />
+
+None<circle cy="20" cx="140" r="1" fill="black" />
+
+None<path stroke="black" d="M140,10 C141.154700538,15 141.154700538,15 140,20" />
+
+<circle cy="20" cx="150" r="1" fill="black" />
+
+None<circle cy="30" cx="150" r="1" fill="black" />
+
+None<path stroke="black" d="M150,20 C151.154700538,25 151.154700538,25 150,30" />
+
+<circle cy="10" cx="160" r="1" fill="black" />
+
+None<circle cy="20" cx="160" r="1" fill="black" />
+
+None<path stroke="black" d="M160,10 C161.154700538,15 161.154700538,15 160,20" />
+
+<circle cy="20" cx="170" r="1" fill="black" />
+
+None<circle cy="30" cx="170" r="1" fill="black" />
+
+None<path stroke="black" d="M170,20 C171.154700538,25 171.154700538,25 170,30" />
+
+<circle cy="10" cx="180" r="1" fill="black" />
+
+None<circle cy="20" cx="180" r="1" fill="black" />
+
+None<path stroke="black" d="M180,10 C181.154700538,15 181.154700538,15 180,20" />
+
+<circle cy="20" cx="190" r="1" fill="black" />
+
+None<circle cy="30" cx="190" r="1" fill="black" />
+
+None<path stroke="black" d="M190,20 C191.154700538,25 191.154700538,25 190,30" />
+
+<circle cy="10" cx="200" r="1" fill="black" />
+
+None<circle cy="20" cx="200" r="1" fill="black" />
+
+None<path stroke="black" d="M200,10 C201.154700538,15 201.154700538,15 200,20" />
+
+<circle cy="20" cx="210" r="1" fill="black" />
+
+None<circle cy="30" cx="210" r="1" fill="black" />
+
+None<path stroke="black" d="M210,20 C211.154700538,25 211.154700538,25 210,30" />
+
+<circle cy="10" cx="220" r="1" fill="black" />
+
+None<circle cy="20" cx="220" r="1" fill="black" />
+
+None<path stroke="black" d="M220,10 C221.154700538,15 221.154700538,15 220,20" />
+
+<circle cy="20" cx="230" r="1" fill="black" />
+
+None<circle cy="30" cx="230" r="1" fill="black" />
+
+None<path stroke="black" d="M230,20 C231.154700538,25 231.154700538,25 230,30" />
+
+<circle cy="10" cx="240" r="1" fill="black" />
+
+None<circle cy="20" cx="240" r="1" fill="black" />
+
+None<path stroke="black" d="M240,10 C241.154700538,15 241.154700538,15 240,20" />
+
+<circle cy="20" cx="250" r="1" fill="black" />
+
+None<circle cy="30" cx="250" r="1" fill="black" />
+
+None<path stroke="black" d="M250,20 C251.154700538,25 251.154700538,25 250,30" />
+
+<circle cy="10" cx="260" r="1" fill="black" />
+
+None<circle cy="20" cx="260" r="1" fill="black" />
+
+None<path stroke="black" d="M260,10 C261.154700538,15 261.154700538,15 260,20" />
+
+<circle cy="20" cx="270" r="1" fill="black" />
+
+None<circle cy="30" cx="270" r="1" fill="black" />
+
+None<path stroke="black" d="M270,20 C271.154700538,25 271.154700538,25 270,30" />
+
+<circle cy="10" cx="280" r="1" fill="black" />
+
+None<circle cy="20" cx="280" r="1" fill="black" />
+
+None<path stroke="black" d="M280,10 C281.154700538,15 281.154700538,15 280,20" />
+
+<circle cy="20" cx="290" r="1" fill="black" />
+
+None<circle cy="30" cx="290" r="1" fill="black" />
+
+None<path stroke="black" d="M290,20 C291.154700538,25 291.154700538,25 290,30" />
+
+<circle cy="10" cx="300" r="1" fill="black" />
+
+None<circle cy="20" cx="300" r="1" fill="black" />
+
+None<path stroke="black" d="M300,10 C301.154700538,15 301.154700538,15 300,20" />
+
+<circle cy="20" cx="310" r="1" fill="black" />
+
+None<circle cy="30" cx="310" r="1" fill="black" />
+
+None<path stroke="black" d="M310,20 C311.154700538,25 311.154700538,25 310,30" />
+
+<circle cy="10" cx="320" r="1" fill="black" />
+
+None<circle cy="20" cx="320" r="1" fill="black" />
+
+None<path stroke="black" d="M320,10 C321.154700538,15 321.154700538,15 320,20" />
+
+<circle cy="20" cx="330" r="1" fill="black" />
+
+None<circle cy="30" cx="330" r="1" fill="black" />
+
+None<path stroke="black" d="M330,20 C331.154700538,25 331.154700538,25 330,30" />
+
+<circle cy="10" cx="340" r="1" fill="black" />
+
+None<circle cy="20" cx="340" r="1" fill="black" />
+
+None<path stroke="black" d="M340,10 C341.154700538,15 341.154700538,15 340,20" />
+
+<circle cy="20" cx="350" r="1" fill="black" />
+
+None<circle cy="30" cx="350" r="1" fill="black" />
+
+None<path stroke="black" d="M350,20 C351.154700538,25 351.154700538,25 350,30" />
+
+<circle cy="10" cx="360" r="1" fill="black" />
+
+None<circle cy="20" cx="360" r="1" fill="black" />
+
+None<path stroke="black" d="M360,10 C361.154700538,15 361.154700538,15 360,20" />
+
+<circle cy="20" cx="370" r="1" fill="black" />
+
+None<circle cy="30" cx="370" r="1" fill="black" />
+
+None<path stroke="black" d="M370,20 C371.154700538,25 371.154700538,25 370,30" />
+
+<circle cy="10" cx="380" r="1" fill="black" />
+
+None<circle cy="20" cx="380" r="1" fill="black" />
+
+None<path stroke="black" d="M380,10 C381.154700538,15 381.154700538,15 380,20" />
+
+<circle cy="20" cx="390" r="1" fill="black" />
+
+None<circle cy="30" cx="390" r="1" fill="black" />
+
+None<path stroke="black" d="M390,20 C391.154700538,25 391.154700538,25 390,30" />
+
+<circle cy="10" cx="400" r="1" fill="black" />
+
+None<circle cy="20" cx="400" r="1" fill="black" />
+
+None<path stroke="black" d="M400,10 C401.154700538,15 401.154700538,15 400,20" />
+
+<circle cy="20" cx="410" r="1" fill="black" />
+
+None<circle cy="30" cx="410" r="1" fill="black" />
+
+None<path stroke="black" d="M410,20 C411.154700538,25 411.154700538,25 410,30" />
+
+<circle cy="10" cx="420" r="1" fill="black" />
+
+None<circle cy="20" cx="420" r="1" fill="black" />
+
+None<path stroke="black" d="M420,10 C421.154700538,15 421.154700538,15 420,20" />
+
+<circle cy="20" cx="430" r="1" fill="black" />
+
+None<circle cy="30" cx="430" r="1" fill="black" />
+
+None<path stroke="black" d="M430,20 C431.154700538,25 431.154700538,25 430,30" />
+
+<circle cy="10" cx="440" r="1" fill="black" />
+
+None<circle cy="20" cx="440" r="1" fill="black" />
+
+None<path stroke="black" d="M440,10 C441.154700538,15 441.154700538,15 440,20" />
+
+<circle cy="20" cx="450" r="1" fill="black" />
+
+None<circle cy="30" cx="450" r="1" fill="black" />
+
+None<path stroke="black" d="M450,20 C451.154700538,25 451.154700538,25 450,30" />
+
+<circle cy="10" cx="460" r="1" fill="black" />
+
+None<circle cy="20" cx="460" r="1" fill="black" />
+
+None<path stroke="black" d="M460,10 C461.154700538,15 461.154700538,15 460,20" />
+
+<circle cy="20" cx="470" r="1" fill="black" />
+
+None<circle cy="30" cx="470" r="1" fill="black" />
+
+None<path stroke="black" d="M470,20 C471.154700538,25 471.154700538,25 470,30" />
+
+<circle cy="10" cx="480" r="1" fill="black" />
+
+None<circle cy="20" cx="480" r="1" fill="black" />
+
+None<path stroke="black" d="M480,10 C481.154700538,15 481.154700538,15 480,20" />
+
+<circle cy="20" cx="490" r="1" fill="black" />
+
+None<circle cy="30" cx="490" r="1" fill="black" />
+
+None<path stroke="black" d="M490,20 C491.154700538,25 491.154700538,25 490,30" />
+
+<circle cy="10" cx="500" r="1" fill="black" />
+
+None<circle cy="20" cx="500" r="1" fill="black" />
+
+None<path stroke="black" d="M500,10 C501.154700538,15 501.154700538,15 500,20" />
+
+<circle cy="20" cx="510" r="1" fill="black" />
+
+None<circle cy="30" cx="510" r="1" fill="black" />
+
+None<path stroke="black" d="M510,20 C511.154700538,25 511.154700538,25 510,30" />
+
+<circle cy="10" cx="520" r="1" fill="black" />
+
+None<circle cy="20" cx="520" r="1" fill="black" />
+
+None<path stroke="black" d="M520,10 C521.154700538,15 521.154700538,15 520,20" />
+
+<circle cy="20" cx="530" r="1" fill="black" />
+
+None<circle cy="30" cx="530" r="1" fill="black" />
+
+None<path stroke="black" d="M530,20 C531.154700538,25 531.154700538,25 530,30" />
+
+<circle cy="10" cx="540" r="1" fill="black" />
+
+None<circle cy="20" cx="540" r="1" fill="black" />
+
+None<path stroke="black" d="M540,10 C541.154700538,15 541.154700538,15 540,20" />
+
+<circle cy="20" cx="550" r="1" fill="black" />
+
+None<circle cy="30" cx="550" r="1" fill="black" />
+
+None<path stroke="black" d="M550,20 C551.154700538,25 551.154700538,25 550,30" />
+
+<circle cy="10" cx="560" r="1" fill="black" />
+
+None<circle cy="20" cx="560" r="1" fill="black" />
+
+None<path stroke="black" d="M560,10 C561.154700538,15 561.154700538,15 560,20" />
+
+<circle cy="20" cx="570" r="1" fill="black" />
+
+None<circle cy="30" cx="570" r="1" fill="black" />
+
+None<path stroke="black" d="M570,20 C571.154700538,25 571.154700538,25 570,30" />
+
+<circle cy="10" cx="580" r="1" fill="black" />
+
+None<circle cy="20" cx="580" r="1" fill="black" />
+
+None<path stroke="black" d="M580,10 C581.154700538,15 581.154700538,15 580,20" />
+
+<circle cy="20" cx="590" r="1" fill="black" />
+
+None<circle cy="30" cx="590" r="1" fill="black" />
+
+None<path stroke="black" d="M590,20 C591.154700538,25 591.154700538,25 590,30" />
+
+<circle cy="10" cx="600" r="1" fill="black" />
+
+None<circle cy="20" cx="600" r="1" fill="black" />
+
+None<path stroke="black" d="M600,10 C601.154700538,15 601.154700538,15 600,20" />
+
+<circle cy="20" cx="610" r="1" fill="black" />
+
+None<circle cy="30" cx="610" r="1" fill="black" />
+
+None<path stroke="black" d="M610,20 C611.154700538,25 611.154700538,25 610,30" />
+
+<circle cy="10" cx="620" r="1" fill="black" />
+
+None<circle cy="20" cx="620" r="1" fill="black" />
+
+None<path stroke="black" d="M620,10 C621.154700538,15 621.154700538,15 620,20" />
+
+<circle cy="20" cx="630" r="1" fill="black" />
+
+None<circle cy="30" cx="630" r="1" fill="black" />
+
+None<path stroke="black" d="M630,20 C631.154700538,25 631.154700538,25 630,30" />
+
+<circle cy="10" cx="640" r="1" fill="black" />
+
+None<circle cy="20" cx="640" r="1" fill="black" />
+
+None<path stroke="black" d="M640,10 C641.154700538,15 641.154700538,15 640,20" />
+
+<circle cy="20" cx="650" r="1" fill="black" />
+
+None<circle cy="30" cx="650" r="1" fill="black" />
+
+None<path stroke="black" d="M650,20 C651.154700538,25 651.154700538,25 650,30" />
+
+<circle cy="10" cx="660" r="1" fill="black" />
+
+None<circle cy="20" cx="660" r="1" fill="black" />
+
+None<path stroke="black" d="M660,10 C661.154700538,15 661.154700538,15 660,20" />
+
+<circle cy="20" cx="670" r="1" fill="black" />
+
+None<circle cy="30" cx="670" r="1" fill="black" />
+
+None<path stroke="black" d="M670,20 C671.154700538,25 671.154700538,25 670,30" />
+
+<circle cy="10" cx="680" r="1" fill="black" />
+
+None<circle cy="20" cx="680" r="1" fill="black" />
+
+None<path stroke="black" d="M680,10 C681.154700538,15 681.154700538,15 680,20" />
+
+<circle cy="20" cx="690" r="1" fill="black" />
+
+None<circle cy="30" cx="690" r="1" fill="black" />
+
+None<path stroke="black" d="M690,20 C691.154700538,25 691.154700538,25 690,30" />
+
+<circle cy="10" cx="700" r="1" fill="black" />
+
+None<circle cy="20" cx="700" r="1" fill="black" />
+
+None<path stroke="black" d="M700,10 C701.154700538,15 701.154700538,15 700,20" />
+
+<circle cy="20" cx="710" r="1" fill="black" />
+
+None<circle cy="30" cx="710" r="1" fill="black" />
+
+None<path stroke="black" d="M710,20 C711.154700538,25 711.154700538,25 710,30" />
+
+<circle cy="10" cx="720" r="1" fill="black" />
+
+None<circle cy="20" cx="720" r="1" fill="black" />
+
+None<path stroke="black" d="M720,10 C721.154700538,15 721.154700538,15 720,20" />
+
+<circle cy="20" cx="730" r="1" fill="black" />
+
+None<circle cy="30" cx="730" r="1" fill="black" />
+
+None<path stroke="black" d="M730,20 C731.154700538,25 731.154700538,25 730,30" />
+
+<circle cy="10" cx="740" r="1" fill="black" />
+
+None<circle cy="20" cx="740" r="1" fill="black" />
+
+None<path stroke="black" d="M740,10 C741.154700538,15 741.154700538,15 740,20" />
+
+<circle cy="20" cx="750" r="1" fill="black" />
+
+None<circle cy="30" cx="750" r="1" fill="black" />
+
+None<path stroke="black" d="M750,20 C751.154700538,25 751.154700538,25 750,30" />
+
+<circle cy="10" cx="760" r="1" fill="black" />
+
+None<circle cy="20" cx="760" r="1" fill="black" />
+
+None<path stroke="black" d="M760,10 C761.154700538,15 761.154700538,15 760,20" />
+
+<circle cy="20" cx="770" r="1" fill="black" />
+
+None<circle cy="30" cx="770" r="1" fill="black" />
+
+None<path stroke="black" d="M770,20 C771.154700538,25 771.154700538,25 770,30" />
+
+<circle cy="10" cx="780" r="1" fill="black" />
+
+None<circle cy="20" cx="780" r="1" fill="black" />
+
+None<path stroke="black" d="M780,10 C781.154700538,15 781.154700538,15 780,20" />
+
+<circle cy="20" cx="790" r="1" fill="black" />
+
+None<circle cy="30" cx="790" r="1" fill="black" />
+
+None<path stroke="black" d="M790,20 C791.154700538,25 791.154700538,25 790,30" />
+
+<circle cy="10" cx="800" r="1" fill="black" />
+
+None<circle cy="20" cx="800" r="1" fill="black" />
+
+None<path stroke="black" d="M800,10 C801.154700538,15 801.154700538,15 800,20" />
+
+<circle cy="20" cx="810" r="1" fill="black" />
+
+None<circle cy="30" cx="810" r="1" fill="black" />
+
+None<path stroke="black" d="M810,20 C811.154700538,25 811.154700538,25 810,30" />
+
+<circle cy="10" cx="820" r="1" fill="black" />
+
+None<circle cy="20" cx="820" r="1" fill="black" />
+
+None<path stroke="black" d="M820,10 C821.154700538,15 821.154700538,15 820,20" />
+
+<circle cy="20" cx="830" r="1" fill="black" />
+
+None<circle cy="30" cx="830" r="1" fill="black" />
+
+None<path stroke="black" d="M830,20 C831.154700538,25 831.154700538,25 830,30" />
+
+<circle cy="10" cx="840" r="1" fill="black" />
+
+None<circle cy="20" cx="840" r="1" fill="black" />
+
+None<path stroke="black" d="M840,10 C841.154700538,15 841.154700538,15 840,20" />
+
+<circle cy="20" cx="850" r="1" fill="black" />
+
+None<circle cy="30" cx="850" r="1" fill="black" />
+
+None<path stroke="black" d="M850,20 C851.154700538,25 851.154700538,25 850,30" />
+
+<circle cy="10" cx="860" r="1" fill="black" />
+
+None<circle cy="20" cx="860" r="1" fill="black" />
+
+None<path stroke="black" d="M860,10 C861.154700538,15 861.154700538,15 860,20" />
+
+<circle cy="20" cx="870" r="1" fill="black" />
+
+None<circle cy="30" cx="870" r="1" fill="black" />
+
+None<path stroke="black" d="M870,20 C871.154700538,25 871.154700538,25 870,30" />
+
+<circle cy="10" cx="880" r="1" fill="black" />
+
+None<circle cy="20" cx="880" r="1" fill="black" />
+
+None<path stroke="black" d="M880,10 C881.154700538,15 881.154700538,15 880,20" />
+
+<circle cy="20" cx="890" r="1" fill="black" />
+
+None<circle cy="30" cx="890" r="1" fill="black" />
+
+None<path stroke="black" d="M890,20 C891.154700538,25 891.154700538,25 890,30" />
+
+<circle cy="10" cx="900" r="1" fill="black" />
+
+None<circle cy="20" cx="900" r="1" fill="black" />
+
+None<path stroke="black" d="M900,10 C901.154700538,15 901.154700538,15 900,20" />
+
+<circle cy="20" cx="910" r="1" fill="black" />
+
+None<circle cy="30" cx="910" r="1" fill="black" />
+
+None<path stroke="black" d="M910,20 C911.154700538,25 911.154700538,25 910,30" />
+
+<circle cy="10" cx="920" r="1" fill="black" />
+
+None<circle cy="20" cx="920" r="1" fill="black" />
+
+None<path stroke="black" d="M920,10 C921.154700538,15 921.154700538,15 920,20" />
+
+<circle cy="20" cx="930" r="1" fill="black" />
+
+None<circle cy="30" cx="930" r="1" fill="black" />
+
+None<path stroke="black" d="M930,20 C931.154700538,25 931.154700538,25 930,30" />
+
+<circle cy="10" cx="940" r="1" fill="black" />
+
+None<circle cy="20" cx="940" r="1" fill="black" />
+
+None<path stroke="black" d="M940,10 C941.154700538,15 941.154700538,15 940,20" />
+
+<circle cy="20" cx="950" r="1" fill="black" />
+
+None<circle cy="30" cx="950" r="1" fill="black" />
+
+None<path stroke="black" d="M950,20 C951.154700538,25 951.154700538,25 950,30" />
+
+<circle cy="10" cx="960" r="1" fill="black" />
+
+None<circle cy="20" cx="960" r="1" fill="black" />
+
+None<path stroke="black" d="M960,10 C961.154700538,15 961.154700538,15 960,20" />
+
+<circle cy="20" cx="970" r="1" fill="black" />
+
+None<circle cy="30" cx="970" r="1" fill="black" />
+
+None<path stroke="black" d="M970,20 C971.154700538,25 971.154700538,25 970,30" />
+
+<circle cy="10" cx="980" r="1" fill="black" />
+
+None<circle cy="20" cx="980" r="1" fill="black" />
+
+None<path stroke="black" d="M980,10 C981.154700538,15 981.154700538,15 980,20" />
+
+<circle cy="20" cx="990" r="1" fill="black" />
+
+None<circle cy="30" cx="990" r="1" fill="black" />
+
+None<path stroke="black" d="M990,20 C991.154700538,25 991.154700538,25 990,30" />
+
+<circle cy="10" cx="1000" r="1" fill="black" />
+
+None<circle cy="20" cx="1000" r="1" fill="black" />
+
+None<path stroke="black" d="M1000,10 C1001.15470054,15 1001.15470054,15 1000,20" />
+
+<circle cy="20" cx="1010" r="1" fill="black" />
+
+None<circle cy="30" cx="1010" r="1" fill="black" />
+
+None<path stroke="black" d="M1010,20 C1011.15470054,25 1011.15470054,25 1010,30" />
+
+<circle cy="10" cx="1020" r="1" fill="black" />
+
+None<circle cy="20" cx="1020" r="1" fill="black" />
+
+None<path stroke="black" d="M1020,10 C1021.15470054,15 1021.15470054,15 1020,20" />
+
+</g>
+
+</svg>
+

@@ -125,7 +125,7 @@ for link in links_to_json:
 	ts = link["time"]
 	node_1 = link["from"]
 	node_2 = link["to"]
-	offset = ts*10
+	offset = ts*10 + 15
 
 	# Add nodes
 	g.append(g.append(svgfig.SVG("circle", cx=origleft + offset, cy=10*node_1, r=1, fill=link["color"])))
