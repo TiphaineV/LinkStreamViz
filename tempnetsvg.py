@@ -43,12 +43,11 @@ def infer_args():
 
 
 def show_help():
-	print("Usage: draw_link_streams.py input_file --max-nodes=<N> --max-time=<T> [--output=<out.svg>]")
+	print("Usage: tempnetsvg.py input_file [--json=1] [--output=<out.svg>]")
 	print("Input file is either a text file containing t u v, or a JSON file where the following properties are available:")
 	print("    from")
 	print("    to")
 	print("    time")
-	print("    curved:[0 (straight line)|1 (curved)]")
 	print("    color: to be chosen in http://www.december.com/html/spec/colorsvg.html")
 	# print("    group: Group ID (any number) offers the opportunity to color groups of links identically")
 
