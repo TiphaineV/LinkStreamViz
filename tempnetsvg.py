@@ -9,12 +9,7 @@ argv["json"] = 0
 g = svgfig.SVG("g")
 nodes = set()
 offset = 15
-hoffset = 15
-voffset = 10
 groups = {}
-
-#svgfig._canvas_defaults["width"] = '1200px'
-svgfig._canvas_defaults["width"] = str(100*12) + 'px'
 
 # BEGIN FUNCTIONS
 def show_help():
@@ -29,7 +24,7 @@ def show_help():
 
 def read_argv():
 	for arg in sys.argv:
-		if "=" in arg: 
+		if "=" in arg:
 			content = arg.split("=")
 			arg_name = content[0].replace("--", "")
 			argv[arg_name] = content[1]
@@ -42,27 +37,43 @@ if len(sys.argv) < 2 or "--help" in sys.argv or "-h" in sys.argv :
 
 read_argv()
 
+# Define dimensions
+
+width = 25 + 10*int(argv["max-time"])
+svgfig._canvas_defaults["width"] = str(width) + 'px'
+
+height = 2 + 10*int(argv["max-nodes"])
+svgfig._canvas_defaults["height"] = str(height) + 'px'
+
+origleft = 5
+origtop = 0
+
+#For groups only
+hoffset = 0
+voffset = 10
+################
+
 # Draw background lines
 for i in range(1, int(argv["max-nodes"]) + 1):
-	g.append(svgfig.SVG("text", str(chr(96+i)), x=5, y=10*i+1.5, fill="black", stroke_width=0, style="font-size:6"))
-	g.append(svgfig.SVG("line", stroke_dasharray="2,2", stroke_width=0.5, x1=10, y1=10*i, x2=15+10*int(argv["max-time"]), y2=10*i))
-	
+	g.append(svgfig.SVG("text", str(chr(96+i)), x=str(origleft) + "px", y=10*i+origtop, fill="black", stroke_width=0, style="font-size:6"))
+	g.append(svgfig.SVG("line", stroke_dasharray="2,2", stroke_width=0.5, x1=str(origleft + 5) + "px", y1=10*i+origtop, x2=width - 5, y2=10*i + origtop))
+
 # Add timearrow
-#g.append(svgfig.SVG("line", stroke_width=0.5, x1=10, y1=10+10*int(argv["max-nodes"]) , x2=25+10*int(argv["max-time"]), y2=10+10*int(argv["max-nodes"])))
-#g.append(svgfig.SVG("line", stroke_width=0.5, x1=22+10*int(argv["max-time"]), y1=7+10*int(argv["max-nodes"]) , x2=25+10*int(argv["max-time"]), y2=10+10*int(argv["max-nodes"])))
-#g.append(svgfig.SVG("line", stroke_width=0.5, x1=22+10*int(argv["max-time"]), y1=13+10*int(argv["max-nodes"]) , x2=25+10*int(argv["max-time"]), y2=10+10*int(argv["max-nodes"])))
-#g.append(svgfig.SVG("text", str("Time"), x=25+10*int(argv["max-time"]) , y=-4+10*int(argv["max-time"]) , fill="black", stroke_width=0, style="font-size:4"))
+# g.append(svgfig.SVG("line", stroke_width=0.5, x1=10, y1=10+10*int(argv["max-nodes"]) , x2=25+10*int(argv["max-time"]), y2=10+10*int(argv["max-nodes"])))
+# g.append(svgfig.SVG("line", stroke_width=0.5, x1=22+10*int(argv["max-time"]), y1=7+10*int(argv["max-nodes"]) , x2=25+10*int(argv["max-time"]), y2=10+10*int(argv["max-nodes"])))
+# g.append(svgfig.SVG("line", stroke_width=0.5, x1=22+10*int(argv["max-time"]), y1=13+10*int(argv["max-nodes"]) , x2=25+10*int(argv["max-time"]), y2=10+10*int(argv["max-nodes"])))
+# g.append(svgfig.SVG("text", str("Time"), x=25+10*int(argv["max-time"]) , y=-4+10*int(argv["max-time"]) , fill="black", stroke_width=0, style="font-size:4"))
 #
-## Add time ticks
-#for i in range(0, int(argv["max-time"])):
-#	if i % 5 == 0:
-#		if i == 0:
-#			g.append(svgfig.SVG("line", stroke_width=0.5, x1=10 , y1=10+10*int(argv["max-nodes"]), x2=10 , y2=12+10*int(argv["max-nodes"])))
-#			g.append(svgfig.SVG("text", str(i), x=10 , y=-2+10*int(argv["max-time"]) , fill="black", stroke_width=0, style="font-size:6"))
-#		else:
-#			g.append(svgfig.SVG("line", stroke_width=0.5, x1=offset*i , y1=10+10*int(argv["max-nodes"]), x2=offset*i , y2=12+10*int(argv["max-nodes"])))
-#			g.append(svgfig.SVG("text", str(i), x=offset*i , y=-2+10*int(argv["max-time"]) , fill="black", stroke_width=0, style="font-size:6"))
-#
+# # Add time ticks
+# for i in range(0, int(argv["max-time"])):
+# 	if i % 5 == 0:
+# 		if i == 0:
+# 			g.append(svgfig.SVG("line", stroke_width=0.5, x1=10 , y1=10+10*int(argv["max-nodes"]), x2=10 , y2=12+10*int(argv["max-nodes"])))
+# 			g.append(svgfig.SVG("text", str(i), x=10 , y=-2+10*int(argv["max-time"]) , fill="black", stroke_width=0, style="font-size:6"))
+# 		else:
+# 			g.append(svgfig.SVG("line", stroke_width=0.5, x1=offset*i , y1=10+10*int(argv["max-nodes"]), x2=offset*i , y2=12+10*int(argv["max-nodes"])))
+# 			g.append(svgfig.SVG("text", str(i), x=offset*i , y=-2+10*int(argv["max-time"]) , fill="black", stroke_width=0, style="font-size:6"))
+
 # Transform file of triplets into JSON structure, or load JSON structure
 links_to_json = []
 # If we are reading from a JSON file
@@ -114,18 +125,18 @@ for link in links_to_json:
 	ts = link["time"]
 	node_1 = link["from"]
 	node_2 = link["to"]
-	offset = ts*10 + 15
+	offset = ts*10 + 100
 
 	# Add nodes
-	g.append(g.append(svgfig.SVG("circle", cx=offset, cy=10*node_1, r=1, fill=link["color"])))
-	g.append(g.append(svgfig.SVG("circle", cx=offset, cy=10*node_2, r=1, fill=link["color"])))
+	g.append(g.append(svgfig.SVG("circle", cx=origleft + offset, cy=10*node_1, r=1, fill=link["color"])))
+	g.append(g.append(svgfig.SVG("circle", cx=origleft + offset, cy=10*node_2, r=1, fill=link["color"])))
 
 	# Draw path between nodes according to specified curving -- links can be curved or not.
 	if link["curved"] is 1:
-		x = 0.2*((10*node_2 - 10*node_1)/math.tan(math.pi/3)) + offset
+		x = 0.2*((10*node_2 - 10*node_1)/math.tan(math.pi/3)) + origleft + offset
 		y = (10*node_1 + 10*node_2) / 2
 
-		g.append(svgfig.SVG("path", stroke=link["color"],d="M" + str(offset) + "," + str(10*node_1) + " C" + str(x) + "," + str(y) + " " + str(x) + "," + str(y) + " " + str(offset) + "," + str(10*node_2)))
+		g.append(svgfig.SVG("path", stroke=link["color"],d="M" + str(origleft + offset) + "," + str(10*node_1) + " C" + str(x) + "," + str(y) + " " + str(x) + "," + str(y) + " " + str(origleft + offset) + "," + str(10*node_2)))
 	else:
 		g.append(svgfig.SVG("line", x1=offset, y1=10*node_1, x2=offset, y2=10*node_2, stroke=link["color"]))
 
@@ -143,9 +154,6 @@ for link in links_to_json:
 		if groups[groupID]["nodeEnd"] < max(link["from"], link["to"]):
 			groups[groupID]["nodeEnd"] = max(link["from"], link["to"])
 
-
-	svgfig._canvas_defaults["width"] = str(800) + 'px'
-
 # Draw groups
 for group in groups:
 	print "Time start : " + str(groups[group]["timeStart"]*hoffset)
@@ -154,9 +162,9 @@ for group in groups:
 	print "Node end : " + str(groups[group]["nodeEnd"])
 
 	# g.append(svgfig.SVG("rect", x=str(groups[group]["timeStart"]*hoffset), y=str(groups[group]["nodeStart"]*voffset), width=str(groups[group]["timeEnd"]*hoffset - groups[group]["timeStart"]*hoffset - 21), height=str(groups[group]["nodeEnd"]*voffset - groups[group]["nodeStart"]*voffset), style="fill:blue;stroke:blue;stroke-width:1;fill-opacity:0;stroke-opacity:0.9"))
-		
+
 # Save to svg file
 if argv.get("output") is not None:
-	g.save(argv["output"])
-else: 
-	g.save("out.svg")
+	svgfig.canvas(g, viewBox="0 0 " + str(width) + " " + str(height)).save(argv["output"])
+else:
+	svgfig.canvas(g, viewBox="0 0 " + str(width) + " " + str(height)).save("out.svg")
