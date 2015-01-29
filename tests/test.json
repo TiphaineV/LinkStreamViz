@@ -4,7 +4,6 @@
         "time": 8,
         "to": 1,
         "color":"red",
-        "curved":-1,
         "group":1
     },
     "2":{
@@ -22,8 +21,7 @@
     "4":{
         "from": 8,
         "time": 3,
-        "to": 2,
-        "curved": 0
+        "to": 2
     },
     "5":{
         "from": 5,
