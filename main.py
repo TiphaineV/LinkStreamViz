@@ -63,7 +63,7 @@ def read_argv():
 			content = arg.split("=")
 			arg_name = content[0].replace("--", "")
 			argv[arg_name] = content[1]
-		elif "silent in arg":
+		elif "silent" in arg:
 			argv["silent"] = True
 
 def version():
