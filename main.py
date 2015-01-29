@@ -40,10 +40,16 @@ def infer_args():
 			if v > argv["max-nodes"]:
 				argv["max-nodes"] = v
 		inputfile.close()
+	else:
+		json_struct = json.loads(open(sys.argv[1], "r").read())
+		for link in json_struct:
+			argv["max-time"] = max(argv["max-time"], json_struct[link]["time"])
+			argv["max-nodes"] = max(argv["max-nodes"], json_struct[link]["from"], json_struct[link]["to"])
+
 
 
 def show_help():
-	print("Usage: tempnetsvg.py input_file [--json=1] [--output=<out.svg>]")
+	print("Usage: main.py input_file [--json=1] [--output=<out.svg>]")
 	print("Input file is either a text file containing t u v, or a JSON file where the following properties are available:")
 	print("    from")
 	print("    to")
