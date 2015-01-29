@@ -63,6 +63,8 @@ def read_argv():
 			content = arg.split("=")
 			arg_name = content[0].replace("--", "")
 			argv[arg_name] = content[1]
+		elif "silent in arg":
+			argv["silent"] = True
 
 def version():
 	sys.stderr.write("\tTempNetSVG 1.0 -- Jordan Viard 2015\n")
@@ -80,7 +82,8 @@ read_argv()
 
 ## Infer max-nodes/times from input file, and confirm
 infer_args()
-ask_args()
+if not argv["silent"]:
+	ask_args()
 
 sys.stderr.write(" I will now generate a drawing of file " + str(sys.argv[1]) + ", containing " + str(argv["max-nodes"]) + " nodes over " + str(argv["max-time"]) + " instants of time."+ "\n")
 
