@@ -123,8 +123,8 @@ if int(argv["json"]) is 1:
 	for link in json_struct:
 		new_link = {}
 		new_link["time"] = int(json_struct[link]["time"])
-		new_link["from"] = int(json_struct[link]["from"])
-		new_link["to"] = int(json_struct[link]["to"])
+		new_link["from"] = min(int(json_struct[link]["from"]), int(json_struct[link]["to"]))
+		new_link["to"] = max(int(json_struct[link]["from"]), int(json_struct[link]["to"]))
 		if json_struct[link].get("color") is not None:
 			new_link["color"] = json_struct[link]["color"]
 		else:
@@ -154,8 +154,8 @@ else:
 			link = {}
 			contents = line.split(" ")
 			link["time"] = int(contents[0])
-			link["from"] = int(contents[1].strip())
-			link["to"] = int(contents[2].strip())
+			link["from"] = min(int(contents[1].strip()),int(contents[2].strip()))
+			link["to"] = max(int(contents[1].strip()),int(contents[2].strip()))
 			link["color"] = "black"
 			link["curved"] = 1
 			link["group"] = None
