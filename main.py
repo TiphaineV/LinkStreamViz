@@ -8,6 +8,7 @@ argv = {}
 argv["json"] = 0
 argv["max-time"] = 0
 argv["max-nodes"] = 0
+argv["silent"] = False
 g = svgfig.SVG("g")
 nodes = set()
 offset = 15
@@ -49,7 +50,7 @@ def infer_args():
 
 
 def show_help():
-	print("Usage: main.py input_file [--json=1] [--output=<out.svg>]")
+	print("Usage: main.py input_file [--silent] [--json=1] [--output=<out.svg>]")
 	print("Input file is either a text file containing t u v, or a JSON file where the following properties are available:")
 	print("    from")
 	print("    to")
@@ -84,8 +85,7 @@ read_argv()
 infer_args()
 if not argv["silent"]:
 	ask_args()
-
-sys.stderr.write(" I will now generate a drawing of file " + str(sys.argv[1]) + ", containing " + str(argv["max-nodes"]) + " nodes over " + str(argv["max-time"]) + " instants of time."+ "\n")
+	sys.stderr.write(" I will now generate a drawing of file " + str(sys.argv[1]) + ", containing " + str(argv["max-nodes"]) + " nodes over " + str(argv["max-time"]) + " instants of time."+ "\n")
 
 # Define dimensions
 
@@ -216,7 +216,9 @@ for link in links_to_json:
 # Save to svg file
 if argv.get("output") is not None:
 	svgfig.canvas(g, viewBox="0 0 " + str(width) + " " + str(height)).save(argv["output"])
-	sys.stderr.write("Output generated to "+ str(argv["output"]) + ".\n")
+	if not argv["silent"]:
+		sys.stderr.write("Output generated to "+ str(argv["output"]) + ".\n")
 else:
 	svgfig.canvas(g, viewBox="0 0 " + str(width) + " " + str(height)).save("out.svg")
-	sys.stderr.write(" Output generated to out.svg.\n")
+	if not argv["silent"]:
+		sys.stderr.write(" Output generated to out.svg.\n")
