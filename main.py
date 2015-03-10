@@ -11,6 +11,8 @@ argv["max-nodes"] = 0
 argv["silent"] = False
 g = svgfig.SVG("g")
 nodes = set()
+nodes_index = {}
+
 offset = 15
 groups = {}
 
@@ -26,27 +28,50 @@ def ask_args():
 		argv["max-time"] = int(user_maxtime)
 
 def infer_args():
+	cpt = 1
 	if argv["json"] == 0:
 		inputfile = open(sys.argv[1])
 		for line in inputfile.readlines():
 			contents = line.split(" ")
 			t = int(contents[0])
-			u = int(contents[1])
-			v = int(contents[2])
+			u = contents[1].strip()
+			v = contents[2].strip()
 
 			if t > argv["max-time"]:
 				argv["max-time"] = t
-			if u > argv["max-nodes"]:
-				argv["max-nodes"] = u
-			if v > argv["max-nodes"]:
-				argv["max-nodes"] = v
+
+			nodes.add(u)
+			nodes.add(v)
+
+			if not u in nodes_index:
+				nodes_index[u] = cpt
+				cpt += 1
+			if not v in nodes_index:
+				nodes_index[v] = cpt
+				cpt += 1
+
+			#if u > argv["max-nodes"]:
+			#	argv["max-nodes"] = u
+			#if v > argv["max-nodes"]:
+			#	argv["max-nodes"] = v
 		inputfile.close()
+		argv["max-nodes"] = len(nodes)
 	else:
 		json_struct = json.loads(open(sys.argv[1], "r").read())
+		cpt = 1
 		for link in json_struct:
 			argv["max-time"] = max(argv["max-time"], json_struct[link]["time"])
-			argv["max-nodes"] = max(argv["max-nodes"], json_struct[link]["from"], json_struct[link]["to"])
+			nodes.add(str(json_struct[link]["from"]))
+			nodes.add(str(json_struct[link]["to"]))
 
+			if not json_struct[link]["from"] in nodes_index:
+				nodes_index[json_struct[link]["from"]] = cpt
+				cpt += 1
+			if not json_struct[link]["to"] in nodes_index:
+				nodes_index[json_struct[link]["to"]] = cpt
+				cpt += 1
+
+			argv["max-nodes"] = max(argv["max-nodes"], nodes_index[json_struct[link]["from"]], nodes_index[json_struct[link]["to"]])
 
 
 def show_help():
@@ -87,26 +112,30 @@ if not argv["silent"]:
 	ask_args()
 	sys.stderr.write(" I will now generate a drawing of file " + str(sys.argv[1]) + ", containing " + str(argv["max-nodes"]) + " nodes over " + str(argv["max-time"]) + " instants of time."+ "\n")
 
-# Define dimensions
+max_node_length = 0
+# Manage node labels
+for i in range(1, int(argv["max-nodes"]) + 1):
+	if(len(list(nodes)[i-1]) > max_node_length):
+		max_node_length = len(list(nodes)[i-1])
 
-width = 25 + 10*int(argv["max-time"])
+# Define dimensions
+width = 5*max_node_length + 10*int(argv["max-time"]+5)
 svgfig._canvas_defaults["width"] = str(width) + 'px'
 
 height = 2 + 10*int(argv["max-nodes"])
 svgfig._canvas_defaults["height"] = str(height) + 'px'
 
-origleft = 5
+origleft = max_node_length*5+5
 origtop = 0
 
 #For groups only
 hoffset = 0
 voffset = 10
 ################
-
 # Draw background lines
 for i in range(1, int(argv["max-nodes"]) + 1):
-	# g.append(svgfig.SVG("text", str(chr(96+i)), x=str(origleft) + "px", y=10*i+origtop, fill="black", stroke_width=0, style="font-size:6"))
-	g.append(svgfig.SVG("line", stroke_dasharray="2,2", stroke_width=0.5, x1=str(origleft + 5) + "px", y1=10*i+origtop, x2=width - 5, y2=10*i + origtop))
+	g.append(svgfig.SVG("text", str(list(nodes)[i-1]), x=str(max_node_length*5), y=10*i+origtop+2, fill="black", stroke_width=0, text_anchor="end", style="font-size:6;"))
+	g.append(svgfig.SVG("line", stroke_dasharray="2,2", stroke_width=0.5, x1=str(origleft), y1=10*i+origtop, x2=width - 5, y2=10*i + origtop))
 
 # Add timearrow
 # g.append(svgfig.SVG("line", stroke_width=0.5, x1=10, y1=10+10*int(argv["max-nodes"]) , x2=25+10*int(argv["max-time"]), y2=10+10*int(argv["max-nodes"])))
@@ -132,8 +161,8 @@ if int(argv["json"]) is 1:
 	for link in json_struct:
 		new_link = {}
 		new_link["time"] = int(json_struct[link]["time"])
-		new_link["from"] = min(int(json_struct[link]["from"]), int(json_struct[link]["to"]))
-		new_link["to"] = max(int(json_struct[link]["from"]), int(json_struct[link]["to"]))
+		new_link["from"] = min(nodes_index[json_struct[link]["from"]], nodes_index[json_struct[link]["to"]])
+		new_link["to"] = max(nodes_index[json_struct[link]["from"]], nodes_index[json_struct[link]["to"]])
 		if json_struct[link].get("color") is not None:
 			new_link["color"] = json_struct[link]["color"]
 		else:
@@ -163,8 +192,8 @@ else:
 			link = {}
 			contents = line.split(" ")
 			link["time"] = int(contents[0])
-			link["from"] = min(int(contents[1].strip()),int(contents[2].strip()))
-			link["to"] = max(int(contents[1].strip()),int(contents[2].strip()))
+			link["from"] = min(nodes_index[contents[1].strip()],nodes_index[contents[2].strip()])
+			link["to"] = max(nodes_index[contents[1].strip()],nodes_index[contents[2].strip()])
 			link["color"] = "black"
 			link["curved"] = 1
 			link["group"] = None
