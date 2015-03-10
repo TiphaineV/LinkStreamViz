@@ -134,7 +134,7 @@ voffset = 10
 ################
 # Draw background lines
 for i in range(1, int(argv["max-nodes"]) + 1):
-	g.append(svgfig.SVG("text", str(list(nodes)[i-1]), x=str(max_node_length*5), y=10*i+origtop+2, fill="black", stroke_width=0, text_anchor="end", style="font-size:6;"))
+	g.append(svgfig.SVG("text", str(list(nodes)[i-1]), x=str(max_node_length*5), y=10*i+origtop+2, fill="black", stroke_width=0, text_anchor="end", font_size="6"))
 	g.append(svgfig.SVG("line", stroke_dasharray="2,2", stroke_width=0.5, x1=str(origleft), y1=10*i+origtop, x2=width - 5, y2=10*i + origtop))
 
 # Add timearrow
