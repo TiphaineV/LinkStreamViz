@@ -4,7 +4,8 @@ import svgfig
 import json
 import math
 
-argv = {"json": 0, "max-time": 0, "max-nodes": 0, "silent": False}
+argv = {"json": 0, "max-time": 0, "max-nodes": 0, "silent": False,
+        "output": "out.svg"}
 g = svgfig.SVG("g")
 nodes = set()
 nodes_index = {}
@@ -146,20 +147,46 @@ if __name__ == '__main__':
                             y2=10 * i + origtop))
 
 # Add timearrow
-# g.append(svgfig.SVG("line", stroke_width=0.5, x1=10, y1=10+10*int(argv["max-nodes"]) , x2=25+10*int(argv["max-time"]), y2=10+10*int(argv["max-nodes"])))
-# g.append(svgfig.SVG("line", stroke_width=0.5, x1=22+10*int(argv["max-time"]), y1=7+10*int(argv["max-nodes"]) , x2=25+10*int(argv["max-time"]), y2=10+10*int(argv["max-nodes"])))
-# g.append(svgfig.SVG("line", stroke_width=0.5, x1=22+10*int(argv["max-time"]), y1=13+10*int(argv["max-nodes"]) , x2=25+10*int(argv["max-time"]), y2=10+10*int(argv["max-nodes"])))
-# g.append(svgfig.SVG("text", str("Time"), x=25+10*int(argv["max-time"]) , y=-4+10*int(argv["max-time"]) , fill="black", stroke_width=0, style="font-size:4"))
+# g.append(svgfig.SVG("line",
+#                     stroke_width=0.5, x1=10,
+#                      y1=10+10*int(argv["max-nodes"]),
+#                     x2=25+10*int(argv["max-time"]),
+#                     y2=10+10*int(argv["max-nodes"])))
+# g.append(svgfig.SVG("line", stroke_width=0.5, x1=22+10*int(argv["max-time"]),
+#                     y1=7+10*int(argv["max-nodes"]) ,
+#                     x2=25+10*int(argv["max-time"]),
+#                     y2=10+10*int(argv["max-nodes"])))
+# g.append(svgfig.SVG("line", stroke_width=0.5,
+#                     x1=22+10*int(argv["max-time"]),
+#                     y1=13+10*int(argv["max-nodes"]) ,
+#                     x2=25+10*int(argv["max-time"]),
+#                     y2=10+10*int(argv["max-nodes"])))
+# g.append(svgfig.SVG("text", str("Time"),
+#                      x=25+10*int(argv["max-time"]),
+#                      y=-4+10*int(argv["max-time"]),
+#                      fill="black", stroke_width=0,
+#                      style="font-size:4"))
 #
 # Add time ticks
 # for i in range(0, int(argv["max-time"])):
 # 	if i % 5 == 0:
 # 		if i == 0:
-# 			g.append(svgfig.SVG("line", stroke_width=0.5, x1=10 , y1=10+10*int(argv["max-nodes"]), x2=10 , y2=12+10*int(argv["max-nodes"])))
-# 			g.append(svgfig.SVG("text", str(i), x=10 , y=-2+10*int(argv["max-time"]) , fill="black", stroke_width=0, style="font-size:6"))
+# 			g.append(svgfig.SVG("line",
+#                                stroke_width=0.5,
+#                                x1=10, y1=10+10*int(argv["max-nodes"]),
+#                                x2=10 , y2=12+10*int(argv["max-nodes"])))
+# 			g.append(svgfig.SVG("text", str(i),
+#                                x=10, y=-2+10*int(argv["max-time"]),
+#                                fill="black", stroke_width=0,
+#                                style="font-size:6"))
 # 		else:
-# 			g.append(svgfig.SVG("line", stroke_width=0.5, x1=offset*i , y1=10+10*int(argv["max-nodes"]), x2=offset*i , y2=12+10*int(argv["max-nodes"])))
-# 			g.append(svgfig.SVG("text", str(i), x=offset*i , y=-2+10*int(argv["max-time"]) , fill="black", stroke_width=0, style="font-size:6"))
+# 			g.append(svgfig.SVG("line", stroke_width=0.5,
+#                                x1=offset*i, y1=10+10*int(argv["max-nodes"]),
+#                                x2=offset*i, y2=12+10*int(argv["max-nodes"])))
+# 			g.append(svgfig.SVG("text", str(i),
+#                                x=offset*i, y=-2+10*int(argv["max-time"]),
+#                                fill="black", stroke_width=0,
+#                                style="font-size:6"))
 
 # Transform file of triplets into JSON structure, or load JSON structure
     links_to_json = []
@@ -267,13 +294,8 @@ if __name__ == '__main__':
 # g.append(svgfig.SVG("rect", x=str(groups[group]["timeStart"]*hoffset), y=str(groups[group]["nodeStart"]*voffset), width=str(groups[group]["timeEnd"]*hoffset - groups[group]["timeStart"]*hoffset - 21), height=str(groups[group]["nodeEnd"]*voffset - groups[group]["nodeStart"]*voffset), style="fill:blue;stroke:blue;stroke-width:1;fill-opacity:0;stroke-opacity:0.9"))
 
 # Save to svg file
-    if argv.get("output") is not None:
-        viewBoxparam = "0 0 " + str(width) + " " + str(height)
-        svgfig.canvas(g, viewBox=viewBoxparam).save(argv["output"])
-        if not argv["silent"]:
-            sys.stderr.write("Output generated to "+str(argv["output"])+".\n")
-    else:
-        svgfig.canvas(
-            g, viewBox="0 0 " + str(width) + " " + str(height)).save("out.svg")
-        if not argv["silent"]:
-            sys.stderr.write(" Output generated to out.svg.\n")
+
+    viewBoxparam = "0 0 " + str(width) + " " + str(height)
+    svgfig.canvas(g, viewBox=viewBoxparam).save(argv["output"])
+    if not argv["silent"]:
+        sys.stderr.write("Output generated to " + str(argv["output"]) + ".\n")
