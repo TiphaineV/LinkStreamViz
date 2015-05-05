@@ -1,0 +1,905 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+<svg style="stroke-linejoin:round; stroke:black; stroke-width:0.5pt; text-anchor:middle; fill:none" xmlns="http://www.w3.org/2000/svg" font-family="Helvetica, Arial, FreeSans, Sans, sans, sans-serif" height="100px" width="415.0px" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 415.0 100">
+
+<g>
+
+<text font-size="6" text-anchor="end" y="82" x="5" stroke-width="0" fill="black">0</text>
+
+<line stroke-width="0.5" y2="80" x2="405.0" stroke-dasharray="2,2" y1="80" x1="10" />
+
+<text font-size="6" text-anchor="end" y="12" x="5" stroke-width="0" fill="black">1</text>
+
+<line stroke-width="0.5" y2="10" x2="405.0" stroke-dasharray="2,2" y1="10" x1="10" />
+
+<text font-size="6" text-anchor="end" y="22" x="5" stroke-width="0" fill="black">2</text>
+
+<line stroke-width="0.5" y2="20" x2="405.0" stroke-dasharray="2,2" y1="20" x1="10" />
+
+<text font-size="6" text-anchor="end" y="42" x="5" stroke-width="0" fill="black">3</text>
+
+<line stroke-width="0.5" y2="40" x2="405.0" stroke-dasharray="2,2" y1="40" x1="10" />
+
+<text font-size="6" text-anchor="end" y="52" x="5" stroke-width="0" fill="black">4</text>
+
+<line stroke-width="0.5" y2="50" x2="405.0" stroke-dasharray="2,2" y1="50" x1="10" />
+
+<text font-size="6" text-anchor="end" y="32" x="5" stroke-width="0" fill="black">5</text>
+
+<line stroke-width="0.5" y2="30" x2="405.0" stroke-dasharray="2,2" y1="30" x1="10" />
+
+<text font-size="6" text-anchor="end" y="72" x="5" stroke-width="0" fill="black">6</text>
+
+<line stroke-width="0.5" y2="70" x2="405.0" stroke-dasharray="2,2" y1="70" x1="10" />
+
+<text font-size="6" text-anchor="end" y="62" x="5" stroke-width="0" fill="black">7</text>
+
+<line stroke-width="0.5" y2="60" x2="405.0" stroke-dasharray="2,2" y1="60" x1="10" />
+
+<line y2="90" x1="10" y1="90" x2="410.0" stroke-width="0.5" />
+
+<line y2="90" x1="407.0" y1="87" x2="410.0" stroke-width="0.5" />
+
+<line y2="90" x1="407.0" y1="93" x2="410.0" stroke-width="0.5" />
+
+<text font-size="6" y="87" x="396.0" stroke-width="0" fill="black">Time</text>
+
+<line y2="93" x1="15" y1="87" x2="15" stroke-width="0.5" />
+
+<text font-size="6" y="97" x="15" stroke-width="0" fill="black">0</text>
+
+<line y2="93" x1="65" y1="87" x2="65" stroke-width="0.5" />
+
+<text font-size="6" y="97" x="65" stroke-width="0" fill="black">5</text>
+
+<line y2="93" x1="115" y1="87" x2="115" stroke-width="0.5" />
+
+<text font-size="6" y="97" x="115" stroke-width="0" fill="black">10</text>
+
+<line y2="93" x1="165" y1="87" x2="165" stroke-width="0.5" />
+
+<text font-size="6" y="97" x="165" stroke-width="0" fill="black">15</text>
+
+<line y2="93" x1="215" y1="87" x2="215" stroke-width="0.5" />
+
+<text font-size="6" y="97" x="215" stroke-width="0" fill="black">20</text>
+
+<line y2="93" x1="265" y1="87" x2="265" stroke-width="0.5" />
+
+<text font-size="6" y="97" x="265" stroke-width="0" fill="black">25</text>
+
+<line y2="93" x1="315" y1="87" x2="315" stroke-width="0.5" />
+
+<text font-size="6" y="97" x="315" stroke-width="0" fill="black">30</text>
+
+<line y2="93" x1="365" y1="87" x2="365" stroke-width="0.5" />
+
+<text font-size="6" y="97" x="365" stroke-width="0" fill="black">35</text>
+
+<circle cy="10" cx="55.0" r="1" fill="black" />
+
+None<circle cy="80" cx="55.0" r="1" fill="black" />
+
+None<path stroke="black" d="M55.0,10 C63.0829037687,45 63.0829037687,45 55.0,80" />
+
+<circle cy="10" cx="125.0" r="1" fill="black" />
+
+None<circle cy="80" cx="125.0" r="1" fill="black" />
+
+None<path stroke="black" d="M125.0,10 C133.082903769,45 133.082903769,45 125.0,80" />
+
+<circle cy="10" cx="125.0" r="1" fill="black" />
+
+None<circle cy="80" cx="125.0" r="1" fill="black" />
+
+None<path stroke="black" d="M125.0,10 C133.082903769,45 133.082903769,45 125.0,80" />
+
+<circle cy="10" cx="145.0" r="1" fill="black" />
+
+None<circle cy="80" cx="145.0" r="1" fill="black" />
+
+None<path stroke="black" d="M145.0,10 C153.082903769,45 153.082903769,45 145.0,80" />
+
+<circle cy="10" cx="295.0" r="1" fill="black" />
+
+None<circle cy="80" cx="295.0" r="1" fill="black" />
+
+None<path stroke="black" d="M295.0,10 C303.082903769,45 303.082903769,45 295.0,80" />
+
+<circle cy="10" cx="315.0" r="1" fill="black" />
+
+None<circle cy="80" cx="315.0" r="1" fill="black" />
+
+None<path stroke="black" d="M315.0,10 C323.082903769,45 323.082903769,45 315.0,80" />
+
+<circle cy="10" cx="325.0" r="1" fill="black" />
+
+None<circle cy="80" cx="325.0" r="1" fill="black" />
+
+None<path stroke="black" d="M325.0,10 C333.082903769,45 333.082903769,45 325.0,80" />
+
+<circle cy="20" cx="15.0" r="1" fill="black" />
+
+None<circle cy="80" cx="15.0" r="1" fill="black" />
+
+None<path stroke="black" d="M15.0,20 C21.9282032303,50 21.9282032303,50 15.0,80" />
+
+<circle cy="20" cx="25.0" r="1" fill="black" />
+
+None<circle cy="80" cx="25.0" r="1" fill="black" />
+
+None<path stroke="black" d="M25.0,20 C31.9282032303,50 31.9282032303,50 25.0,80" />
+
+<circle cy="20" cx="35.0" r="1" fill="black" />
+
+None<circle cy="80" cx="35.0" r="1" fill="black" />
+
+None<path stroke="black" d="M35.0,20 C41.9282032303,50 41.9282032303,50 35.0,80" />
+
+<circle cy="20" cx="35.0" r="1" fill="black" />
+
+None<circle cy="80" cx="35.0" r="1" fill="black" />
+
+None<path stroke="black" d="M35.0,20 C41.9282032303,50 41.9282032303,50 35.0,80" />
+
+<circle cy="20" cx="105.0" r="1" fill="black" />
+
+None<circle cy="80" cx="105.0" r="1" fill="black" />
+
+None<path stroke="black" d="M105.0,20 C111.92820323,50 111.92820323,50 105.0,80" />
+
+<circle cy="20" cx="125.0" r="1" fill="black" />
+
+None<circle cy="80" cx="125.0" r="1" fill="black" />
+
+None<path stroke="black" d="M125.0,20 C131.92820323,50 131.92820323,50 125.0,80" />
+
+<circle cy="20" cx="335.0" r="1" fill="black" />
+
+None<circle cy="80" cx="335.0" r="1" fill="black" />
+
+None<path stroke="black" d="M335.0,20 C341.92820323,50 341.92820323,50 335.0,80" />
+
+<circle cy="40" cx="15.0" r="1" fill="black" />
+
+None<circle cy="80" cx="15.0" r="1" fill="black" />
+
+None<path stroke="black" d="M15.0,40 C19.6188021535,60 19.6188021535,60 15.0,80" />
+
+<circle cy="40" cx="15.0" r="1" fill="black" />
+
+None<circle cy="80" cx="15.0" r="1" fill="black" />
+
+None<path stroke="black" d="M15.0,40 C19.6188021535,60 19.6188021535,60 15.0,80" />
+
+<circle cy="40" cx="35.0" r="1" fill="black" />
+
+None<circle cy="80" cx="35.0" r="1" fill="black" />
+
+None<path stroke="black" d="M35.0,40 C39.6188021535,60 39.6188021535,60 35.0,80" />
+
+<circle cy="40" cx="65.0" r="1" fill="black" />
+
+None<circle cy="80" cx="65.0" r="1" fill="black" />
+
+None<path stroke="black" d="M65.0,40 C69.6188021535,60 69.6188021535,60 65.0,80" />
+
+<circle cy="40" cx="65.0" r="1" fill="black" />
+
+None<circle cy="80" cx="65.0" r="1" fill="black" />
+
+None<path stroke="black" d="M65.0,40 C69.6188021535,60 69.6188021535,60 65.0,80" />
+
+<circle cy="40" cx="75.0" r="1" fill="black" />
+
+None<circle cy="80" cx="75.0" r="1" fill="black" />
+
+None<path stroke="black" d="M75.0,40 C79.6188021535,60 79.6188021535,60 75.0,80" />
+
+<circle cy="40" cx="145.0" r="1" fill="black" />
+
+None<circle cy="80" cx="145.0" r="1" fill="black" />
+
+None<path stroke="black" d="M145.0,40 C149.618802154,60 149.618802154,60 145.0,80" />
+
+<circle cy="40" cx="155.0" r="1" fill="black" />
+
+None<circle cy="80" cx="155.0" r="1" fill="black" />
+
+None<path stroke="black" d="M155.0,40 C159.618802154,60 159.618802154,60 155.0,80" />
+
+<circle cy="40" cx="315.0" r="1" fill="black" />
+
+None<circle cy="80" cx="315.0" r="1" fill="black" />
+
+None<path stroke="black" d="M315.0,40 C319.618802154,60 319.618802154,60 315.0,80" />
+
+<circle cy="10" cx="65.0" r="1" fill="black" />
+
+None<circle cy="20" cx="65.0" r="1" fill="black" />
+
+None<path stroke="black" d="M65.0,10 C66.1547005384,15 66.1547005384,15 65.0,20" />
+
+<circle cy="10" cx="125.0" r="1" fill="black" />
+
+None<circle cy="20" cx="125.0" r="1" fill="black" />
+
+None<path stroke="black" d="M125.0,10 C126.154700538,15 126.154700538,15 125.0,20" />
+
+<circle cy="10" cx="125.0" r="1" fill="black" />
+
+None<circle cy="20" cx="125.0" r="1" fill="black" />
+
+None<path stroke="black" d="M125.0,10 C126.154700538,15 126.154700538,15 125.0,20" />
+
+<circle cy="10" cx="135.0" r="1" fill="black" />
+
+None<circle cy="20" cx="135.0" r="1" fill="black" />
+
+None<path stroke="black" d="M135.0,10 C136.154700538,15 136.154700538,15 135.0,20" />
+
+<circle cy="10" cx="155.0" r="1" fill="black" />
+
+None<circle cy="20" cx="155.0" r="1" fill="black" />
+
+None<path stroke="black" d="M155.0,10 C156.154700538,15 156.154700538,15 155.0,20" />
+
+<circle cy="10" cx="155.0" r="1" fill="black" />
+
+None<circle cy="40" cx="155.0" r="1" fill="black" />
+
+None<path stroke="black" d="M155.0,10 C158.464101615,25 158.464101615,25 155.0,40" />
+
+<circle cy="10" cx="345.0" r="1" fill="black" />
+
+None<circle cy="40" cx="345.0" r="1" fill="black" />
+
+None<path stroke="black" d="M345.0,10 C348.464101615,25 348.464101615,25 345.0,40" />
+
+<circle cy="20" cx="35.0" r="1" fill="black" />
+
+None<circle cy="40" cx="35.0" r="1" fill="black" />
+
+None<path stroke="black" d="M35.0,20 C37.3094010768,30 37.3094010768,30 35.0,40" />
+
+<circle cy="20" cx="85.0" r="1" fill="black" />
+
+None<circle cy="40" cx="85.0" r="1" fill="black" />
+
+None<path stroke="black" d="M85.0,20 C87.3094010768,30 87.3094010768,30 85.0,40" />
+
+<circle cy="20" cx="135.0" r="1" fill="black" />
+
+None<circle cy="40" cx="135.0" r="1" fill="black" />
+
+None<path stroke="black" d="M135.0,20 C137.309401077,30 137.309401077,30 135.0,40" />
+
+<circle cy="20" cx="325.0" r="1" fill="black" />
+
+None<circle cy="40" cx="325.0" r="1" fill="black" />
+
+None<path stroke="black" d="M325.0,20 C327.309401077,30 327.309401077,30 325.0,40" />
+
+<circle cy="40" cx="115.0" r="1" fill="black" />
+
+None<circle cy="50" cx="115.0" r="1" fill="black" />
+
+None<path stroke="black" d="M115.0,40 C116.154700538,45 116.154700538,45 115.0,50" />
+
+<circle cy="40" cx="115.0" r="1" fill="black" />
+
+None<circle cy="50" cx="115.0" r="1" fill="black" />
+
+None<path stroke="black" d="M115.0,40 C116.154700538,45 116.154700538,45 115.0,50" />
+
+<circle cy="40" cx="125.0" r="1" fill="black" />
+
+None<circle cy="50" cx="125.0" r="1" fill="black" />
+
+None<path stroke="black" d="M125.0,40 C126.154700538,45 126.154700538,45 125.0,50" />
+
+<circle cy="40" cx="155.0" r="1" fill="black" />
+
+None<circle cy="50" cx="155.0" r="1" fill="black" />
+
+None<path stroke="black" d="M155.0,40 C156.154700538,45 156.154700538,45 155.0,50" />
+
+<circle cy="40" cx="185.0" r="1" fill="black" />
+
+None<circle cy="50" cx="185.0" r="1" fill="black" />
+
+None<path stroke="black" d="M185.0,40 C186.154700538,45 186.154700538,45 185.0,50" />
+
+<circle cy="30" cx="115.0" r="1" fill="black" />
+
+None<circle cy="40" cx="115.0" r="1" fill="black" />
+
+None<path stroke="black" d="M115.0,30 C116.154700538,35 116.154700538,35 115.0,40" />
+
+<circle cy="30" cx="115.0" r="1" fill="black" />
+
+None<circle cy="40" cx="115.0" r="1" fill="black" />
+
+None<path stroke="black" d="M115.0,30 C116.154700538,35 116.154700538,35 115.0,40" />
+
+<circle cy="30" cx="135.0" r="1" fill="black" />
+
+None<circle cy="40" cx="135.0" r="1" fill="black" />
+
+None<path stroke="black" d="M135.0,30 C136.154700538,35 136.154700538,35 135.0,40" />
+
+<circle cy="30" cx="155.0" r="1" fill="black" />
+
+None<circle cy="40" cx="155.0" r="1" fill="black" />
+
+None<path stroke="black" d="M155.0,30 C156.154700538,35 156.154700538,35 155.0,40" />
+
+<circle cy="30" cx="155.0" r="1" fill="black" />
+
+None<circle cy="40" cx="155.0" r="1" fill="black" />
+
+None<path stroke="black" d="M155.0,30 C156.154700538,35 156.154700538,35 155.0,40" />
+
+<circle cy="30" cx="155.0" r="1" fill="black" />
+
+None<circle cy="40" cx="155.0" r="1" fill="black" />
+
+None<path stroke="black" d="M155.0,30 C156.154700538,35 156.154700538,35 155.0,40" />
+
+<circle cy="30" cx="185.0" r="1" fill="black" />
+
+None<circle cy="40" cx="185.0" r="1" fill="black" />
+
+None<path stroke="black" d="M185.0,30 C186.154700538,35 186.154700538,35 185.0,40" />
+
+<circle cy="30" cx="195.0" r="1" fill="black" />
+
+None<circle cy="40" cx="195.0" r="1" fill="black" />
+
+None<path stroke="black" d="M195.0,30 C196.154700538,35 196.154700538,35 195.0,40" />
+
+<circle cy="30" cx="145.0" r="1" fill="black" />
+
+None<circle cy="50" cx="145.0" r="1" fill="black" />
+
+None<path stroke="black" d="M145.0,30 C147.309401077,40 147.309401077,40 145.0,50" />
+
+<circle cy="30" cx="155.0" r="1" fill="black" />
+
+None<circle cy="50" cx="155.0" r="1" fill="black" />
+
+None<path stroke="black" d="M155.0,30 C157.309401077,40 157.309401077,40 155.0,50" />
+
+<circle cy="30" cx="175.0" r="1" fill="black" />
+
+None<circle cy="50" cx="175.0" r="1" fill="black" />
+
+None<path stroke="black" d="M175.0,30 C177.309401077,40 177.309401077,40 175.0,50" />
+
+<circle cy="30" cx="185.0" r="1" fill="black" />
+
+None<circle cy="50" cx="185.0" r="1" fill="black" />
+
+None<path stroke="black" d="M185.0,30 C187.309401077,40 187.309401077,40 185.0,50" />
+
+<circle cy="30" cx="195.0" r="1" fill="black" />
+
+None<circle cy="50" cx="195.0" r="1" fill="black" />
+
+None<path stroke="black" d="M195.0,30 C197.309401077,40 197.309401077,40 195.0,50" />
+
+<circle cy="30" cx="35.0" r="1" fill="black" />
+
+None<circle cy="50" cx="35.0" r="1" fill="black" />
+
+None<path stroke="black" d="M35.0,30 C37.3094010768,40 37.3094010768,40 35.0,50" />
+
+<circle cy="30" cx="35.0" r="1" fill="black" />
+
+None<circle cy="50" cx="35.0" r="1" fill="black" />
+
+None<path stroke="black" d="M35.0,30 C37.3094010768,40 37.3094010768,40 35.0,50" />
+
+<circle cy="30" cx="55.0" r="1" fill="black" />
+
+None<circle cy="50" cx="55.0" r="1" fill="black" />
+
+None<path stroke="black" d="M55.0,30 C57.3094010768,40 57.3094010768,40 55.0,50" />
+
+<circle cy="30" cx="55.0" r="1" fill="black" />
+
+None<circle cy="50" cx="55.0" r="1" fill="black" />
+
+None<path stroke="black" d="M55.0,30 C57.3094010768,40 57.3094010768,40 55.0,50" />
+
+<circle cy="30" cx="55.0" r="1" fill="black" />
+
+None<circle cy="50" cx="55.0" r="1" fill="black" />
+
+None<path stroke="black" d="M55.0,30 C57.3094010768,40 57.3094010768,40 55.0,50" />
+
+<circle cy="30" cx="65.0" r="1" fill="black" />
+
+None<circle cy="50" cx="65.0" r="1" fill="black" />
+
+None<path stroke="black" d="M65.0,30 C67.3094010768,40 67.3094010768,40 65.0,50" />
+
+<circle cy="30" cx="65.0" r="1" fill="black" />
+
+None<circle cy="50" cx="65.0" r="1" fill="black" />
+
+None<path stroke="black" d="M65.0,30 C67.3094010768,40 67.3094010768,40 65.0,50" />
+
+<circle cy="30" cx="375.0" r="1" fill="black" />
+
+None<circle cy="50" cx="375.0" r="1" fill="black" />
+
+None<path stroke="black" d="M375.0,30 C377.309401077,40 377.309401077,40 375.0,50" />
+
+<circle cy="30" cx="395.0" r="1" fill="black" />
+
+None<circle cy="50" cx="395.0" r="1" fill="black" />
+
+None<path stroke="black" d="M395.0,30 C397.309401077,40 397.309401077,40 395.0,50" />
+
+<circle cy="30" cx="395.0" r="1" fill="black" />
+
+None<circle cy="50" cx="395.0" r="1" fill="black" />
+
+None<path stroke="black" d="M395.0,30 C397.309401077,40 397.309401077,40 395.0,50" />
+
+<circle cy="30" cx="395.0" r="1" fill="black" />
+
+None<circle cy="50" cx="395.0" r="1" fill="black" />
+
+None<path stroke="black" d="M395.0,30 C397.309401077,40 397.309401077,40 395.0,50" />
+
+<circle cy="50" cx="15.0" r="1" fill="black" />
+
+None<circle cy="70" cx="15.0" r="1" fill="black" />
+
+None<path stroke="black" d="M15.0,50 C17.3094010768,60 17.3094010768,60 15.0,70" />
+
+<circle cy="50" cx="35.0" r="1" fill="black" />
+
+None<circle cy="70" cx="35.0" r="1" fill="black" />
+
+None<path stroke="black" d="M35.0,50 C37.3094010768,60 37.3094010768,60 35.0,70" />
+
+<circle cy="50" cx="55.0" r="1" fill="black" />
+
+None<circle cy="70" cx="55.0" r="1" fill="black" />
+
+None<path stroke="black" d="M55.0,50 C57.3094010768,60 57.3094010768,60 55.0,70" />
+
+<circle cy="50" cx="65.0" r="1" fill="black" />
+
+None<circle cy="70" cx="65.0" r="1" fill="black" />
+
+None<path stroke="black" d="M65.0,50 C67.3094010768,60 67.3094010768,60 65.0,70" />
+
+<circle cy="50" cx="65.0" r="1" fill="black" />
+
+None<circle cy="70" cx="65.0" r="1" fill="black" />
+
+None<path stroke="black" d="M65.0,50 C67.3094010768,60 67.3094010768,60 65.0,70" />
+
+<circle cy="50" cx="65.0" r="1" fill="black" />
+
+None<circle cy="70" cx="65.0" r="1" fill="black" />
+
+None<path stroke="black" d="M65.0,50 C67.3094010768,60 67.3094010768,60 65.0,70" />
+
+<circle cy="50" cx="65.0" r="1" fill="black" />
+
+None<circle cy="70" cx="65.0" r="1" fill="black" />
+
+None<path stroke="black" d="M65.0,50 C67.3094010768,60 67.3094010768,60 65.0,70" />
+
+<circle cy="50" cx="375.0" r="1" fill="black" />
+
+None<circle cy="70" cx="375.0" r="1" fill="black" />
+
+None<path stroke="black" d="M375.0,50 C377.309401077,60 377.309401077,60 375.0,70" />
+
+<circle cy="50" cx="385.0" r="1" fill="black" />
+
+None<circle cy="70" cx="385.0" r="1" fill="black" />
+
+None<path stroke="black" d="M385.0,50 C387.309401077,60 387.309401077,60 385.0,70" />
+
+<circle cy="50" cx="385.0" r="1" fill="black" />
+
+None<circle cy="70" cx="385.0" r="1" fill="black" />
+
+None<path stroke="black" d="M385.0,50 C387.309401077,60 387.309401077,60 385.0,70" />
+
+<circle cy="50" cx="385.0" r="1" fill="black" />
+
+None<circle cy="70" cx="385.0" r="1" fill="black" />
+
+None<path stroke="black" d="M385.0,50 C387.309401077,60 387.309401077,60 385.0,70" />
+
+<circle cy="50" cx="405.0" r="1" fill="black" />
+
+None<circle cy="70" cx="405.0" r="1" fill="black" />
+
+None<path stroke="black" d="M405.0,50 C407.309401077,60 407.309401077,60 405.0,70" />
+
+<circle cy="50" cx="405.0" r="1" fill="black" />
+
+None<circle cy="70" cx="405.0" r="1" fill="black" />
+
+None<path stroke="black" d="M405.0,50 C407.309401077,60 407.309401077,60 405.0,70" />
+
+<circle cy="50" cx="15.0" r="1" fill="black" />
+
+None<circle cy="60" cx="15.0" r="1" fill="black" />
+
+None<path stroke="black" d="M15.0,50 C16.1547005384,55 16.1547005384,55 15.0,60" />
+
+<circle cy="50" cx="25.0" r="1" fill="black" />
+
+None<circle cy="60" cx="25.0" r="1" fill="black" />
+
+None<path stroke="black" d="M25.0,50 C26.1547005384,55 26.1547005384,55 25.0,60" />
+
+<circle cy="50" cx="35.0" r="1" fill="black" />
+
+None<circle cy="60" cx="35.0" r="1" fill="black" />
+
+None<path stroke="black" d="M35.0,50 C36.1547005384,55 36.1547005384,55 35.0,60" />
+
+<circle cy="50" cx="55.0" r="1" fill="black" />
+
+None<circle cy="60" cx="55.0" r="1" fill="black" />
+
+None<path stroke="black" d="M55.0,50 C56.1547005384,55 56.1547005384,55 55.0,60" />
+
+<circle cy="50" cx="55.0" r="1" fill="black" />
+
+None<circle cy="60" cx="55.0" r="1" fill="black" />
+
+None<path stroke="black" d="M55.0,50 C56.1547005384,55 56.1547005384,55 55.0,60" />
+
+<circle cy="50" cx="65.0" r="1" fill="black" />
+
+None<circle cy="60" cx="65.0" r="1" fill="black" />
+
+None<path stroke="black" d="M65.0,50 C66.1547005384,55 66.1547005384,55 65.0,60" />
+
+<circle cy="50" cx="385.0" r="1" fill="black" />
+
+None<circle cy="60" cx="385.0" r="1" fill="black" />
+
+None<path stroke="black" d="M385.0,50 C386.154700538,55 386.154700538,55 385.0,60" />
+
+<circle cy="50" cx="395.0" r="1" fill="black" />
+
+None<circle cy="60" cx="395.0" r="1" fill="black" />
+
+None<path stroke="black" d="M395.0,50 C396.154700538,55 396.154700538,55 395.0,60" />
+
+<circle cy="50" cx="395.0" r="1" fill="black" />
+
+None<circle cy="60" cx="395.0" r="1" fill="black" />
+
+None<path stroke="black" d="M395.0,50 C396.154700538,55 396.154700538,55 395.0,60" />
+
+<circle cy="50" cx="395.0" r="1" fill="black" />
+
+None<circle cy="60" cx="395.0" r="1" fill="black" />
+
+None<path stroke="black" d="M395.0,50 C396.154700538,55 396.154700538,55 395.0,60" />
+
+<circle cy="50" cx="405.0" r="1" fill="black" />
+
+None<circle cy="60" cx="405.0" r="1" fill="black" />
+
+None<path stroke="black" d="M405.0,50 C406.154700538,55 406.154700538,55 405.0,60" />
+
+<circle cy="50" cx="405.0" r="1" fill="black" />
+
+None<circle cy="60" cx="405.0" r="1" fill="black" />
+
+None<path stroke="black" d="M405.0,50 C406.154700538,55 406.154700538,55 405.0,60" />
+
+<circle cy="30" cx="15.0" r="1" fill="black" />
+
+None<circle cy="70" cx="15.0" r="1" fill="black" />
+
+None<path stroke="black" d="M15.0,30 C19.6188021535,50 19.6188021535,50 15.0,70" />
+
+<circle cy="30" cx="25.0" r="1" fill="black" />
+
+None<circle cy="70" cx="25.0" r="1" fill="black" />
+
+None<path stroke="black" d="M25.0,30 C29.6188021535,50 29.6188021535,50 25.0,70" />
+
+<circle cy="30" cx="45.0" r="1" fill="black" />
+
+None<circle cy="70" cx="45.0" r="1" fill="black" />
+
+None<path stroke="black" d="M45.0,30 C49.6188021535,50 49.6188021535,50 45.0,70" />
+
+<circle cy="30" cx="55.0" r="1" fill="black" />
+
+None<circle cy="70" cx="55.0" r="1" fill="black" />
+
+None<path stroke="black" d="M55.0,30 C59.6188021535,50 59.6188021535,50 55.0,70" />
+
+<circle cy="30" cx="65.0" r="1" fill="black" />
+
+None<circle cy="70" cx="65.0" r="1" fill="black" />
+
+None<path stroke="black" d="M65.0,30 C69.6188021535,50 69.6188021535,50 65.0,70" />
+
+<circle cy="30" cx="65.0" r="1" fill="black" />
+
+None<circle cy="70" cx="65.0" r="1" fill="black" />
+
+None<path stroke="black" d="M65.0,30 C69.6188021535,50 69.6188021535,50 65.0,70" />
+
+<circle cy="30" cx="375.0" r="1" fill="black" />
+
+None<circle cy="70" cx="375.0" r="1" fill="black" />
+
+None<path stroke="black" d="M375.0,30 C379.618802154,50 379.618802154,50 375.0,70" />
+
+<circle cy="30" cx="375.0" r="1" fill="black" />
+
+None<circle cy="70" cx="375.0" r="1" fill="black" />
+
+None<path stroke="black" d="M375.0,30 C379.618802154,50 379.618802154,50 375.0,70" />
+
+<circle cy="30" cx="375.0" r="1" fill="black" />
+
+None<circle cy="70" cx="375.0" r="1" fill="black" />
+
+None<path stroke="black" d="M375.0,30 C379.618802154,50 379.618802154,50 375.0,70" />
+
+<circle cy="30" cx="385.0" r="1" fill="black" />
+
+None<circle cy="70" cx="385.0" r="1" fill="black" />
+
+None<path stroke="black" d="M385.0,30 C389.618802154,50 389.618802154,50 385.0,70" />
+
+<circle cy="30" cx="385.0" r="1" fill="black" />
+
+None<circle cy="70" cx="385.0" r="1" fill="black" />
+
+None<path stroke="black" d="M385.0,30 C389.618802154,50 389.618802154,50 385.0,70" />
+
+<circle cy="30" cx="315.0" r="1" fill="black" />
+
+None<circle cy="70" cx="315.0" r="1" fill="black" />
+
+None<path stroke="black" d="M315.0,30 C319.618802154,50 319.618802154,50 315.0,70" />
+
+<circle cy="30" cx="345.0" r="1" fill="black" />
+
+None<circle cy="70" cx="345.0" r="1" fill="black" />
+
+None<path stroke="black" d="M345.0,30 C349.618802154,50 349.618802154,50 345.0,70" />
+
+<circle cy="30" cx="15.0" r="1" fill="black" />
+
+None<circle cy="60" cx="15.0" r="1" fill="black" />
+
+None<path stroke="black" d="M15.0,30 C18.4641016151,45 18.4641016151,45 15.0,60" />
+
+<circle cy="30" cx="15.0" r="1" fill="black" />
+
+None<circle cy="60" cx="15.0" r="1" fill="black" />
+
+None<path stroke="black" d="M15.0,30 C18.4641016151,45 18.4641016151,45 15.0,60" />
+
+<circle cy="30" cx="25.0" r="1" fill="black" />
+
+None<circle cy="60" cx="25.0" r="1" fill="black" />
+
+None<path stroke="black" d="M25.0,30 C28.4641016151,45 28.4641016151,45 25.0,60" />
+
+<circle cy="30" cx="25.0" r="1" fill="black" />
+
+None<circle cy="60" cx="25.0" r="1" fill="black" />
+
+None<path stroke="black" d="M25.0,30 C28.4641016151,45 28.4641016151,45 25.0,60" />
+
+<circle cy="30" cx="35.0" r="1" fill="black" />
+
+None<circle cy="60" cx="35.0" r="1" fill="black" />
+
+None<path stroke="black" d="M35.0,30 C38.4641016151,45 38.4641016151,45 35.0,60" />
+
+<circle cy="30" cx="35.0" r="1" fill="black" />
+
+None<circle cy="60" cx="35.0" r="1" fill="black" />
+
+None<path stroke="black" d="M35.0,30 C38.4641016151,45 38.4641016151,45 35.0,60" />
+
+<circle cy="30" cx="45.0" r="1" fill="black" />
+
+None<circle cy="60" cx="45.0" r="1" fill="black" />
+
+None<path stroke="black" d="M45.0,30 C48.4641016151,45 48.4641016151,45 45.0,60" />
+
+<circle cy="30" cx="45.0" r="1" fill="black" />
+
+None<circle cy="60" cx="45.0" r="1" fill="black" />
+
+None<path stroke="black" d="M45.0,30 C48.4641016151,45 48.4641016151,45 45.0,60" />
+
+<circle cy="30" cx="65.0" r="1" fill="black" />
+
+None<circle cy="60" cx="65.0" r="1" fill="black" />
+
+None<path stroke="black" d="M65.0,30 C68.4641016151,45 68.4641016151,45 65.0,60" />
+
+<circle cy="30" cx="65.0" r="1" fill="black" />
+
+None<circle cy="60" cx="65.0" r="1" fill="black" />
+
+None<path stroke="black" d="M65.0,30 C68.4641016151,45 68.4641016151,45 65.0,60" />
+
+<circle cy="30" cx="65.0" r="1" fill="black" />
+
+None<circle cy="60" cx="65.0" r="1" fill="black" />
+
+None<path stroke="black" d="M65.0,30 C68.4641016151,45 68.4641016151,45 65.0,60" />
+
+<circle cy="30" cx="375.0" r="1" fill="black" />
+
+None<circle cy="60" cx="375.0" r="1" fill="black" />
+
+None<path stroke="black" d="M375.0,30 C378.464101615,45 378.464101615,45 375.0,60" />
+
+<circle cy="30" cx="385.0" r="1" fill="black" />
+
+None<circle cy="60" cx="385.0" r="1" fill="black" />
+
+None<path stroke="black" d="M385.0,30 C388.464101615,45 388.464101615,45 385.0,60" />
+
+<circle cy="30" cx="385.0" r="1" fill="black" />
+
+None<circle cy="60" cx="385.0" r="1" fill="black" />
+
+None<path stroke="black" d="M385.0,30 C388.464101615,45 388.464101615,45 385.0,60" />
+
+<circle cy="30" cx="385.0" r="1" fill="black" />
+
+None<circle cy="60" cx="385.0" r="1" fill="black" />
+
+None<path stroke="black" d="M385.0,30 C388.464101615,45 388.464101615,45 385.0,60" />
+
+<circle cy="30" cx="395.0" r="1" fill="black" />
+
+None<circle cy="60" cx="395.0" r="1" fill="black" />
+
+None<path stroke="black" d="M395.0,30 C398.464101615,45 398.464101615,45 395.0,60" />
+
+<circle cy="30" cx="395.0" r="1" fill="black" />
+
+None<circle cy="60" cx="395.0" r="1" fill="black" />
+
+None<path stroke="black" d="M395.0,30 C398.464101615,45 398.464101615,45 395.0,60" />
+
+<circle cy="30" cx="405.0" r="1" fill="black" />
+
+None<circle cy="60" cx="405.0" r="1" fill="black" />
+
+None<path stroke="black" d="M405.0,30 C408.464101615,45 408.464101615,45 405.0,60" />
+
+<circle cy="30" cx="405.0" r="1" fill="black" />
+
+None<circle cy="60" cx="405.0" r="1" fill="black" />
+
+None<path stroke="black" d="M405.0,30 C408.464101615,45 408.464101615,45 405.0,60" />
+
+<circle cy="30" cx="405.0" r="1" fill="black" />
+
+None<circle cy="60" cx="405.0" r="1" fill="black" />
+
+None<path stroke="black" d="M405.0,30 C408.464101615,45 408.464101615,45 405.0,60" />
+
+<circle cy="30" cx="335.0" r="1" fill="black" />
+
+None<circle cy="60" cx="335.0" r="1" fill="black" />
+
+None<path stroke="black" d="M335.0,30 C338.464101615,45 338.464101615,45 335.0,60" />
+
+<circle cy="60" cx="15.0" r="1" fill="black" />
+
+None<circle cy="70" cx="15.0" r="1" fill="black" />
+
+None<path stroke="black" d="M15.0,60 C16.1547005384,65 16.1547005384,65 15.0,70" />
+
+<circle cy="60" cx="25.0" r="1" fill="black" />
+
+None<circle cy="70" cx="25.0" r="1" fill="black" />
+
+None<path stroke="black" d="M25.0,60 C26.1547005384,65 26.1547005384,65 25.0,70" />
+
+<circle cy="60" cx="25.0" r="1" fill="black" />
+
+None<circle cy="70" cx="25.0" r="1" fill="black" />
+
+None<path stroke="black" d="M25.0,60 C26.1547005384,65 26.1547005384,65 25.0,70" />
+
+<circle cy="60" cx="25.0" r="1" fill="black" />
+
+None<circle cy="70" cx="25.0" r="1" fill="black" />
+
+None<path stroke="black" d="M25.0,60 C26.1547005384,65 26.1547005384,65 25.0,70" />
+
+<circle cy="60" cx="35.0" r="1" fill="black" />
+
+None<circle cy="70" cx="35.0" r="1" fill="black" />
+
+None<path stroke="black" d="M35.0,60 C36.1547005384,65 36.1547005384,65 35.0,70" />
+
+<circle cy="60" cx="65.0" r="1" fill="black" />
+
+None<circle cy="70" cx="65.0" r="1" fill="black" />
+
+None<path stroke="black" d="M65.0,60 C66.1547005384,65 66.1547005384,65 65.0,70" />
+
+<circle cy="60" cx="65.0" r="1" fill="black" />
+
+None<circle cy="70" cx="65.0" r="1" fill="black" />
+
+None<path stroke="black" d="M65.0,60 C66.1547005384,65 66.1547005384,65 65.0,70" />
+
+<circle cy="60" cx="375.0" r="1" fill="black" />
+
+None<circle cy="70" cx="375.0" r="1" fill="black" />
+
+None<path stroke="black" d="M375.0,60 C376.154700538,65 376.154700538,65 375.0,70" />
+
+<circle cy="60" cx="385.0" r="1" fill="black" />
+
+None<circle cy="70" cx="385.0" r="1" fill="black" />
+
+None<path stroke="black" d="M385.0,60 C386.154700538,65 386.154700538,65 385.0,70" />
+
+<circle cy="60" cx="385.0" r="1" fill="black" />
+
+None<circle cy="70" cx="385.0" r="1" fill="black" />
+
+None<path stroke="black" d="M385.0,60 C386.154700538,65 386.154700538,65 385.0,70" />
+
+<circle cy="60" cx="395.0" r="1" fill="black" />
+
+None<circle cy="70" cx="395.0" r="1" fill="black" />
+
+None<path stroke="black" d="M395.0,60 C396.154700538,65 396.154700538,65 395.0,70" />
+
+<circle cy="60" cx="395.0" r="1" fill="black" />
+
+None<circle cy="70" cx="395.0" r="1" fill="black" />
+
+None<path stroke="black" d="M395.0,60 C396.154700538,65 396.154700538,65 395.0,70" />
+
+<circle cy="60" cx="405.0" r="1" fill="black" />
+
+None<circle cy="70" cx="405.0" r="1" fill="black" />
+
+None<path stroke="black" d="M405.0,60 C406.154700538,65 406.154700538,65 405.0,70" />
+
+<circle cy="60" cx="405.0" r="1" fill="black" />
+
+None<circle cy="70" cx="405.0" r="1" fill="black" />
+
+None<path stroke="black" d="M405.0,60 C406.154700538,65 406.154700538,65 405.0,70" />
+
+<circle cy="60" cx="235.0" r="1" fill="black" />
+
+None<circle cy="70" cx="235.0" r="1" fill="black" />
+
+None<path stroke="black" d="M235.0,60 C236.154700538,65 236.154700538,65 235.0,70" />
+
+</g>
+
+</svg>
+
