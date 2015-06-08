@@ -40,7 +40,7 @@ class idGenerator:
     """generates id"""
 
     def __init__(self):
-        self.lookUp = dict()  # dict[Node] =
+        self.lookUp = dict()  # dict[Node] = id
         self.idCount = 0
         self.reverse = dict()  # dict[id] = node
 
@@ -57,8 +57,7 @@ class idGenerator:
             while self.idCount in self.reverse and self.reverse[self.idCount] != element:
                 self.idCount += 1
             self.lookUp[element] = self.idCount
-            self.reverse[self.idCount] = self.lookUp[element]
-        # print(element, self.lookUp[element])
+            self.reverse[self.idCount] = element
         return self.lookUp[element]
 
     def size(self):
@@ -119,10 +118,7 @@ class LinkStream:
                     if t > self.max_time:
                         self.max_time = t
                     self.links.append(Link(t, u, v))
-        self.nodes = []
-        if orderFile == "":
-            self.nodes = [key for key in self.nodeID.lookUp]
-        else:
+        if orderFile != "":
             tmp_nodes = set()
             with open(orderFile, 'r') as order:
                 for i, n in enumerate(order):
