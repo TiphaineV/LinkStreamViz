@@ -113,11 +113,14 @@ class LinkStream:
                     t = float(contents[0])
                     u = int(contents[1])
                     v = int(contents[2])
+                    d = 0
+                    if len(contents) > 3:
+                        d = float(contents[3])
                     self.addNode(u)
                     self.addNode(v)
                     if t > self.max_time:
                         self.max_time = t
-                    self.links.append(Link(t, u, v))
+                    self.links.append(Link(t, u, v, duration=d))
         if orderFile != "":
             tmp_nodes = set()
             with open(orderFile, 'r') as order:
