@@ -25,6 +25,6 @@ python main.py -h
 ```
 Bugs and suggestions
 ----------
-If you happen to find a bug (it's likely not to be a feature ;) ), please drop me an email at jordan.viard@lip6.fr, including your test files and parameters (if any).
+If you happen to find a bug (it's likely not to be a feature ;) ), please drop me an email at tiphaine.viard@lip6.fr, including your test files and parameters (if any).
 
 Likewise, if you have any suggestions, I'd be happy to read them !
